@@ -9,6 +9,6 @@ namespace Main.Tables.Master.Item
     {
       
 
-        public virtual Collection<JournalItemTable> JournalItemTables { get; set; }
+        //public virtual Collection<JournalItemTable> JournalItemTables { get; set; }
     }
 }
