@@ -1,9 +1,11 @@
-﻿using MainEntity.Tables.Contact;
-
-namespace MainEntity.Tables.BusinessUnit
+﻿namespace Main.Tables.Master.Contact.Customer
 {
     public class CustomerTable : ContactTable
     {
-        
+        //Field
+
+        //FK
+
+        //C-FK
     }
 }

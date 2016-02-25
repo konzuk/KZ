@@ -1,24 +1,26 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.BusinessUnit;
-using MainEntity.Tables.User;
+using Main.Tables.Master.Contact.Company;
+using Main.Tables.Master.Contact.Employee;
 
-namespace MainEntity.Tables.Employee
+namespace Main.Tables.Master.Contact
 {
     public class DepartmentTable : TableMasterObjectBase
     {
-        public int? ParentDepartmentId { get; set; }
-        [ForeignKey("ParentDepartmentId"), InverseProperty("DepartmentTables")]
-        public virtual DepartmentTable ParentDepartmentTable { get; set; }
-       
-        public virtual Collection<DepartmentTable> DepartmentTables { get; set; }
-        public virtual Collection<EmployeeTable> EmployeeTables { get; set; }
-        
-        public int? CompanyId { get; set; }
+
+
+        //Field
+
+        //FK
+        public int CompanyId { get; set; }
         [ForeignKey("CompanyId"), InverseProperty("DepartmentTables")]
         public virtual CompanyTable CompanyTable { get; set; }
+
+        //C-FK
+        public virtual ICollection<EmployeeTable> EmployeeTables { get; set; }
+        
+        
 
       
     }

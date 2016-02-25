@@ -1,17 +1,18 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MainEntity.Tables.Location
+namespace Main.Tables.Master.Location
 {
     public class LocationTypeTable : TableMasterObjectBase
     {
     
-        
+        //Field
         public string Description { get; set; }
 
-        public virtual Collection<LocationTable> LocationTables { get; set; }
+        //FK
+
+        //C-FK
+        public virtual ICollection<LocationTable> LocationTables { get; set; }
      
 
     }

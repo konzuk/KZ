@@ -51,16 +51,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\Accounting\Account\AccountCategoryTable.cs" />
+    <Compile Include="Tables\Accounting\Account\AccountSubCategoryTable.cs" />
+    <Compile Include="Tables\Accounting\Account\AccountTable.cs" />
+    <Compile Include="Tables\Accounting\Account\AccountTypeTable.cs" />
+    <Compile Include="Tables\Accounting\Journal\JournalItemMovementMovementTable.cs" />
+    <Compile Include="Tables\Accounting\Journal\JournalItemAccountTable.cs" />
+    <Compile Include="Tables\Accounting\Journal\JournalItemTable.cs" />
     <Compile Include="Tables\Accounting\Journal\JournalStatusTable.cs" />
     <Compile Include="Tables\Accounting\Journal\JournalTable.cs" />
+    <Compile Include="Tables\Accounting\Journal\JournalType\LoanJournalTable.cs" />
     <Compile Include="Tables\Accounting\Journal\TransactionTypeTable.cs" />
+    <Compile Include="Tables\Master\Contact\Customer\DetailCustomer.cs" />
+    <Compile Include="Tables\Master\Contact\CitizenshipTable.cs" />
+    <Compile Include="Tables\Master\Item\InventoryConditionTable.cs" />
+    <Compile Include="Tables\Master\Item\ItemCategoryTable.cs" />
+    <Compile Include="Tables\Master\Item\ItemTable.cs" />
+    <Compile Include="Tables\Master\Item\ItemMakerTable.cs" />
+    <Compile Include="Tables\Master\Item\ItemTypeTable.cs" />
+    <Compile Include="Tables\Master\Item\UnitTable.cs" />
     <Compile Include="Tables\TableMasterObjectBase.cs" />
-    <Compile Include="Tables\Master\User\ApplicationCategoryItemTable.cs" />
-    <Compile Include="Tables\Master\User\ApplicationCategoryTable.cs" />
     <Compile Include="Tables\Master\User\ApplicationFunctionTable.cs" />
     <Compile Include="Tables\Master\User\ApplicationTable.cs" />
     <Compile Include="Tables\Master\User\FunctionTable.cs" />
-    <Compile Include="Tables\Master\User\RoleTable.cs" />
     <Compile Include="Tables\Master\User\UserGroupTable.cs" />
     <Compile Include="Tables\Master\User\UserSessionTable.cs" />
     <Compile Include="Tables\Master\User\UserTable.cs" />
@@ -80,7 +93,6 @@
     <Compile Include="Tables\Master\Contact\Employee\PositionTable.cs" />
     <Compile Include="Tables\Master\Location\LocationTable.cs" />
     <Compile Include="Tables\Master\Location\LocationTypeTable.cs" />
-    <Compile Include="Tables\Master\Location\WarehouseTable.cs" />
     <Compile Include="Tables\TableBase.cs" />
   </ItemGroup>
   <ItemGroup>

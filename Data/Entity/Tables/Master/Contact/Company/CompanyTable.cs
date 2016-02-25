@@ -1,20 +1,21 @@
-﻿
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.Common;
-using MainEntity.Tables.Contact;
-using MainEntity.Tables.Employee;
+using Main.Tables.Master.Common;
 
-namespace MainEntity.Tables.BusinessUnit
+namespace Main.Tables.Master.Contact.Company
 {
     public class CompanyTable : ContactTable
     {
-       
 
-        public int? CurrencyId { get; set; }
-        [ForeignKey("CurrencyId")]
+        //Field
+
+        //FK 
+        public int CurrencyId { get; set; }
+        [ForeignKey("CurrencyId"), InverseProperty("CompanyTables")]
         public virtual CurrencyTable CurrencyTable { get; set; }
-        
-        public virtual Collection<DepartmentTable> DepartmentTables { get; set; }
+
+        //C-FK
+        public virtual ICollection<DepartmentTable> DepartmentTables { get; set; }
     }
 }

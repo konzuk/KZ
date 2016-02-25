@@ -1,24 +1,25 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.BusinessUnit;
-using MainEntity.Tables.Journal;
-using MainEntity.Tables.User;
+using Main.Tables.Accounting.Journal;
+using Main.Tables.Master.Contact.Company;
 
-namespace MainEntity.Tables.Common
+namespace Main.Tables.Master.Common
 {
     public class CurrencyTable : TableMasterObjectBase
     {
-        
+        //Field
         public string CurrencySymbol { get; set; }
 
-        
-        public virtual Collection<ExchangeRateTable> FromExchangeRateTables { get; set; }
-        public virtual Collection<ExchangeRateTable> ToExchangeRateTables { get; set; }
-        
-        public virtual Collection<JournalTable> JournalTables { get; set; }
-       
-        
+        //FK
+
+
+        //C-FK
+        public virtual ICollection<ExchangeRateTable> FromExchangeRateTables { get; set; }
+        public virtual ICollection<ExchangeRateTable> ToExchangeRateTables { get; set; }
+
+        public virtual ICollection<JournalItemTable> JournalItemTables { get; set; }
+        public virtual ICollection<CompanyTable> CompanyTables { get; set; }
+
+
     }
 }

@@ -1,15 +1,16 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.User;
 
-namespace MainEntity.Tables.Employee
+namespace Main.Tables.Master.Contact.Employee
 {
     public class PositionTable : TableMasterObjectBase
     {
-        
-        public virtual Collection<EmployeeTable> EmployeeTables { get; set; }
+        //Field
+
+        //FK
+
+        //C-FK
+        public virtual ICollection<EmployeeTable> EmployeeTables { get; set; }
 
        
     }

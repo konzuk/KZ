@@ -1,15 +1,17 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.User;
 
-namespace MainEntity.Tables.Contact
+namespace Main.Tables.Master.Contact
 {
     public class NationalityTable : TableMasterObjectBase
     {
-        
-        public virtual Collection<ContactTable> ContactTables { get; set; }
+
+        //Field
+
+        //FK
+
+        //C-FK
+        public virtual ICollection<ContactTable> ContactTables { get; set; }
 
        
     }

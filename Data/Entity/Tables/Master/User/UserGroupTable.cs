@@ -1,16 +1,20 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MainEntity.Tables.User
+namespace Main.Tables.Master.User
 {
     public class UserGroupTable : TableMasterObjectBase
     {
-       
 
-        public virtual Collection<UserTable> UserTables { get; set; }
-        public virtual Collection<RoleTable> RoleTables { get; set; }
+        
+
+        //Field
+
+        //FK
+
+        //C-FK
+        public virtual ICollection<UserTable> UserTables { get; set; }
+        public virtual ICollection<ApplicationFunctionTable> ApplicationFunctionTables { get; set; }
 
        
     }

@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace Main.Tables.Master.Contact
 {
-    public class GenderTable : TableMasterObjectBase
+    public class CitizenshipTable : TableMasterObjectBase
     {
 
         //Field
@@ -13,6 +13,6 @@ namespace Main.Tables.Master.Contact
         //C-FK
         public virtual ICollection<ContactTable> ContactTables { get; set; }
 
-        
+       
     }
 }

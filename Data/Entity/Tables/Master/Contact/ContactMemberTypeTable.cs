@@ -1,19 +1,23 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.User;
 
-namespace MainEntity.Tables.Contact
+namespace Main.Tables.Master.Contact
 {
     public class ContactMemberTypeTable : TableMasterObjectBase
     {
-        
+        //Field
+
+        //FK
         public int ContactTypeId { get; set; }
 
-        [ForeignKey("ContactTypeId")]
+        [ForeignKey("ContactTypeId"), InverseProperty("ContactMemberTypeTables")]
         public virtual ContactTypeTable ContactTypeTable { get; set; }
 
-        public virtual Collection<ContactTable> ContactTables { get; set; }
+        //C-FK
+
+
+        public virtual ICollection<ContactTable> ContactTables { get; set; }
 
         
     }

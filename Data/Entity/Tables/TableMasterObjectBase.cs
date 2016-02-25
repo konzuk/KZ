@@ -1,11 +1,7 @@
-﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Dynamic;
-using MainEntity.Tables.User;
 
-namespace MainEntity.Tables
+namespace Main.Tables
 {
     public abstract class TableMasterObjectBase : TableBase
     {

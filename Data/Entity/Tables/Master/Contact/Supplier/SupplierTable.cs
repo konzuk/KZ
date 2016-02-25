@@ -1,9 +1,12 @@
-﻿using MainEntity.Tables.Contact;
-
-namespace MainEntity.Tables.BusinessUnit
+﻿namespace Main.Tables.Master.Contact.Supplier
 {
     public class SupplierTable : ContactTable
     {
+        //Field
+
+        //FK
+
+        //C-FK
         
     }
 }

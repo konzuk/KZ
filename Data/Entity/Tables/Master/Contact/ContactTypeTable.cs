@@ -1,14 +1,16 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.User;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
-namespace MainEntity.Tables.Contact
+namespace Main.Tables.Master.Contact
 {
     public class ContactTypeTable  : TableMasterObjectBase
     {
-       
-        public virtual Collection<ContactMemberTypeTable> ContactMemberTypeTables { get; set; }
+        //Field
+
+        //FK
+
+        //C-FK
+        public virtual ICollection<ContactMemberTypeTable> ContactMemberTypeTables { get; set; }
 
        
     }

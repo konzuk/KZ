@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using Main.Tables.Accounting.Account;
 using Main.Tables.Accounting.Journal;
@@ -25,31 +26,31 @@ namespace Main.Tables.Master.Item
 
         public int ItemMakerId { get; set; }
         [ForeignKey("ItemMakerId"), InverseProperty("ItemTables")]
-        public virtual ItemTypeTable ItemMakerTable { get; set; }
+        public virtual ItemMakerTable ItemMakerTable { get; set; }
 
         public int UnitId { get; set; }
         [ForeignKey("UnitId"), InverseProperty("ItemTables")]
         public virtual UnitTable UnitTable { get; set; }
 
-        public int? IncomeAccountId { get; set; }
+        public int IncomeAccountId { get; set; }
         [ForeignKey("IncomeAccountId"), InverseProperty("IncomeItemTables")]
         public virtual AccountTable IncomeAccountTable { get; set; }
 
-        public int? ExpenseAccountId { get; set; }
+        public int ExpenseAccountId { get; set; }
         [ForeignKey("ExpenseAccountId"), InverseProperty("ExpenseItemTables")]
         public virtual AccountTable ExpenseAccountTable { get; set; }
 
-        public int? CogsAccountId { get; set; }
+        public int CogsAccountId { get; set; }
         [ForeignKey("CogsAccountId"), InverseProperty("CogsItemTables")]
         public virtual AccountTable CogsAccountTable { get; set; }
 
-        public int? InventoryAccountId { get; set; }
+        public int InventoryAccountId { get; set; }
         [ForeignKey("InventoryAccountId"), InverseProperty("InventoryItemTables")]
         public virtual AccountTable InventoryAccountTable { get; set; }
 
 
         //C-FK
-        public virtual Collection<JournalItemTable> JournalItemTables { get; set; }
+        public virtual ICollection<JournalItemTable> JournalItemTables { get; set; }
 
     }
 }

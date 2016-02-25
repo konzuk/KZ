@@ -1,39 +1,33 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.User;
+using Main.Tables.Accounting.Journal;
+using Main.Tables.Master.Contact;
 
-namespace MainEntity.Tables.Location
+namespace Main.Tables.Master.Location
 {
     public class LocationTable : TableMasterObjectBase
     {
         
-       
+        //Field
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public string Description { get; set; }
 
-        public int? LocationTypeId { get; set; }
-        [ForeignKey("LocationTypeId")]
+        //FK
+        public int LocationTypeId { get; set; }
+        [ForeignKey("LocationTypeId"), InverseProperty("LocationTables")]
         public virtual LocationTypeTable LocationTypeTable { get; set; }
 
-        public int? WarehouseId { get; set; }
-        [ForeignKey("WarehouseId")]
-        public virtual WarehouseTable WarehouseTable { get; set; }
-
         public int? ParentLocationId { get; set; }
-        [ForeignKey("ParentLocationId"), InverseProperty("LocationTables")]
+        [ForeignKey("ParentLocationId"), InverseProperty("ChildLocationTables")]
         public virtual LocationTable ParentLocationTable { get; set; }
-        public virtual Collection<LocationTable> LocationTables { get; set; } 
-        
-        //public virtual Collection<LocationServiceTable> FromLocationServiceTables { get; set; }
-        //public virtual Collection<LocationServiceTable> ToLocationServiceTables { get; set; }
-        //public virtual Collection<HotelServiceTable> HotelServiceTables { get; set; }
 
 
-      
-
+        //C-FK
+        public virtual ICollection<LocationTable> ChildLocationTables { get; set; }
+        public virtual ICollection<ContactTable> ContactTables { get; set; }
+        public virtual ICollection<JournalItemMovementMovementTable> JournalItemMovementMovementTables { get; set; }
        
     }
 }

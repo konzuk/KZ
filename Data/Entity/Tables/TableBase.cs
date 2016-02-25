@@ -1,9 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using MainEntity.Tables.User;
 
-namespace MainEntity.Tables
+namespace Main.Tables
 {
     public abstract class TableBase
     {
@@ -28,29 +27,11 @@ namespace MainEntity.Tables
             get { return _modifiedUtcDateTime.ToLocalTime() ; }
             set { _modifiedUtcDateTime = value.ToUniversalTime(); }
         }
-
-        //public int? CreatedById { get; set; }
-        //[ForeignKey("CreatedById"), InverseProperty("CreatedTables")]
-        //public abstract UserTable CreatedBy { get; set; }
-        //public int? ModefiedById { get; set; }
-        //[ForeignKey("ModefiedById"), InverseProperty("ModefiedTables")]
-        //public abstract UserTable ModefiedBy { get; set; }
-
-        private const bool CanDelete = true;
-        private bool _isDeleteAbleDefaultValue = CanDelete;
-        [DefaultValue(CanDelete)]
-        public bool IsDeleteAble {
-            get { return _isDeleteAbleDefaultValue; }
-            set { _isDeleteAbleDefaultValue = value; }
-        }
-        private const bool CanEdit = true;
-        private bool _isEditAbleDefaultValue = CanEdit;
-        [DefaultValue(CanEdit)]
-        public bool IsEditAble {
-            get { return _isEditAbleDefaultValue; }
-            set { _isEditAbleDefaultValue = value; }
-        }
+        
+        public bool IsPreventDelete { get; set; }
+        public bool IsPreventEdit { get; set; }
         public bool IsHidden { get; set; }
+
 
         public virtual TableBase Clone()
         {
