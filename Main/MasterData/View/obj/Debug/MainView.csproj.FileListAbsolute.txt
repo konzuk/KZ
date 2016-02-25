@@ -1,0 +1,4 @@
+C:\Project\KZ\trunk\Main\MasterData\View\bin\Debug\MainView.dll
+C:\Project\KZ\trunk\Main\MasterData\View\bin\Debug\MainView.pdb
+C:\Project\KZ\trunk\Main\MasterData\View\obj\Debug\MainView.dll
+C:\Project\KZ\trunk\Main\MasterData\View\obj\Debug\MainView.pdb

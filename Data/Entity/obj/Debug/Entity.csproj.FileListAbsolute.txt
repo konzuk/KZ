@@ -1,0 +1,8 @@
+C:\Project\KZ\trunk\Data\Entity\bin\Debug\Entity.dll.config
+C:\Project\KZ\trunk\Data\Entity\bin\Debug\Entity.dll
+C:\Project\KZ\trunk\Data\Entity\bin\Debug\Entity.pdb
+C:\Project\KZ\trunk\Data\Entity\bin\Debug\EntityFramework.dll
+C:\Project\KZ\trunk\Data\Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Project\KZ\trunk\Data\Entity\obj\Debug\Entity.dll
+C:\Project\KZ\trunk\Data\Entity\obj\Debug\Entity.pdb
+C:\Project\KZ\trunk\Data\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

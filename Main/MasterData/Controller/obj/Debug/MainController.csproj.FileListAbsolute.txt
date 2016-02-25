@@ -1,0 +1,4 @@
+C:\Project\KZ\trunk\Main\MasterData\Controller\bin\Debug\MainController.dll
+C:\Project\KZ\trunk\Main\MasterData\Controller\bin\Debug\MainController.pdb
+C:\Project\KZ\trunk\Main\MasterData\Controller\obj\Debug\MainController.dll
+C:\Project\KZ\trunk\Main\MasterData\Controller\obj\Debug\MainController.pdb

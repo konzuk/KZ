@@ -1,0 +1,4 @@
+C:\Project\KZ\trunk\Main\MasterData\Model\bin\Debug\MainModel.dll
+C:\Project\KZ\trunk\Main\MasterData\Model\bin\Debug\MainModel.pdb
+C:\Project\KZ\trunk\Main\MasterData\Model\obj\Debug\MainModel.dll
+C:\Project\KZ\trunk\Main\MasterData\Model\obj\Debug\MainModel.pdb

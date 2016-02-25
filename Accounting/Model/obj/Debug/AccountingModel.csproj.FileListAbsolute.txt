@@ -1,0 +1,8 @@
+C:\Project\KZ\trunk\Accounting\MasterData\Model\bin\Debug\AccountingModel.dll
+C:\Project\KZ\trunk\Accounting\MasterData\Model\bin\Debug\AccountingModel.pdb
+C:\Project\KZ\trunk\Accounting\MasterData\Model\obj\Debug\AccountingModel.dll
+C:\Project\KZ\trunk\Accounting\MasterData\Model\obj\Debug\AccountingModel.pdb
+C:\Project\KZ\trunk\Accounting\Model\bin\Debug\AccountingModel.dll
+C:\Project\KZ\trunk\Accounting\Model\bin\Debug\AccountingModel.pdb
+C:\Project\KZ\trunk\Accounting\Model\obj\Debug\AccountingModel.dll
+C:\Project\KZ\trunk\Accounting\Model\obj\Debug\AccountingModel.pdb
