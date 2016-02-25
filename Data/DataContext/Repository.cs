@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
+using Framework.Interfaces.Helper;
 
-namespace MainDataContext
+namespace DataContext
 {
     public class Repository<T> where T : class 
     {
 
         IDbSet<T> _dbSet;
-        public Repository(DbContext dbContext)
+        public Repository(IObjectContext dbContext)
         {
-            _dbSet = dbContext.Set<T>();
-            
+            _dbSet = dbContext.CreateObjectSet<T>();
         }
 
-      
+
         public IEnumerable<T> GetLocal()
         {
             return _dbSet.Local;
@@ -96,6 +98,10 @@ namespace MainDataContext
         {
             _dbSet.Add(entity);
         }
+        public void AddOrUpdate(T entity)
+        {
+            _dbSet.AddOrUpdate(entity);
+        }
 
         public void Attach(T entity)
         {
@@ -106,6 +112,11 @@ namespace MainDataContext
         {
             if (entities == null) return;
             entities.ToList().ForEach(Add);
+        }
+        public void AddOrUpdate(IEnumerable<T> entities)
+        {
+            if (entities == null) return;
+            entities.ToList().ForEach(AddOrUpdate);
         }
 
         public void Delete(IEnumerable<T> entities)
