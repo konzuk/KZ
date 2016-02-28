@@ -1,8 +1,0 @@
-C:\Project\KZ\trunk\Accounting\MasterData\Controller\bin\Debug\AccountingController.dll
-C:\Project\KZ\trunk\Accounting\MasterData\Controller\bin\Debug\AccountingController.pdb
-C:\Project\KZ\trunk\Accounting\MasterData\Controller\obj\Debug\AccountingController.dll
-C:\Project\KZ\trunk\Accounting\MasterData\Controller\obj\Debug\AccountingController.pdb
-C:\Project\KZ\trunk\Accounting\Controller\bin\Debug\AccountingController.dll
-C:\Project\KZ\trunk\Accounting\Controller\bin\Debug\AccountingController.pdb
-C:\Project\KZ\trunk\Accounting\Controller\obj\Debug\AccountingController.dll
-C:\Project\KZ\trunk\Accounting\Controller\obj\Debug\AccountingController.pdb
