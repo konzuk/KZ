@@ -47,7 +47,8 @@
     <Reference Include="DataContext">
       <HintPath>..\Lib\common\DataContext.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Entity">
       <HintPath>..\Lib\common\Entity.dll</HintPath>
     </Reference>
@@ -90,15 +91,15 @@
   <ItemGroup>
     <Compile Include="ApplicatonsRegister.cs" />
     <Compile Include="DatabaseContext.cs" />
-    <Compile Include="Migrations\201602212354585_CreateDatabase.cs" />
-    <Compile Include="Migrations\201602212354585_CreateDatabase.Designer.cs">
-      <DependentUpon>201602212354585_CreateDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201602281755290_CreateTable.cs" />
+    <Compile Include="Migrations\201602281755290_CreateTable.Designer.cs">
+      <DependentUpon>201602281755290_CreateTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Migrations\201602212354585_CreateDatabase.resx">
-      <DependentUpon>201602212354585_CreateDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201602281755290_CreateTable.resx">
+      <DependentUpon>201602281755290_CreateTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
