@@ -51,8 +51,12 @@ namespace MainController.Contact
             {
                 result = new KZResult<IContactModel>()
                 {
-                    IsSuccess = false,
-                    Message = GetException(ex.Message),
+                    Message = new KZResultMessage()
+                    {
+                        IsSuccess = false,
+                        Message = GetException(ex.Message),
+                    },
+                    
                     Models = new KZBindingList<IContactModel>()
                 };
 
