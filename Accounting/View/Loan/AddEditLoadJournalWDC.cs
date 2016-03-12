@@ -44,9 +44,11 @@ namespace AccountingView.Loan
 
         }
 
+
+
         public override void BindModel()
         {
-            base.BindModel();
+            var flu = GetModelBindingManager()
         }
 
         public override void BindEvent()
