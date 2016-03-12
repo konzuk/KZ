@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.Utils.Animation;
 using DevExpress.XtraEditors;
@@ -20,6 +22,7 @@ namespace Framework.Base.App
             InitializeComponent();
 
             KZHelper = container.Resolve<IKZHelper>();
+            KZHelper.KZAsynchronousTask.Owner = this;
 
             SlideFadeTransitionManager = SetSlideFadeTransitionManager();
 
@@ -66,6 +69,7 @@ namespace Framework.Base.App
             transiton.TransitionType = slideFadeTransition1;
 
             var manager = new TransitionManager();
+            manager.ShowWaitingIndicator = false;
             manager.Transitions.Add(transiton);
 
             return manager;
@@ -83,26 +87,40 @@ namespace Framework.Base.App
         {
             if (app != null)
             {
-                if (!DicViews.ContainsKey(app.Id))
+                KZHelper.KZAsynchronousTask.StartTask<IContentView>(delegate
                 {
-                    if (KZHelper.Container.IsRegistered<IContentView>(app.Code))
+                    if (!DicViews.ContainsKey(app.Id))
                     {
-                        var view = KZHelper.Container.Resolve<IContentView>(app.Code);
-                        view.Owner = this;
-                        view.LoadAppFunction(app);
-                        DicViews.Add(app.Id, view);
-                    }
-                    else
-                    {
-                        var view = new BlankView(KZHelper.Container);
-                        DicViews.Add(app.Id, view);
-                    }
-                }
+                        if (KZHelper.Container.IsRegistered<IContentView>(app.Code))
+                        {
+                            var view = KZHelper.Container.Resolve<IContentView>(app.Code);
+                            view.Owner = this;
+                            view.LoadAppFunction(app);
+                            DicViews.Add(app.Id, view);
 
-                LoadView(DicViews[app.Id] as Control);
+                        }
+                        else
+                        {
+                            var view = new BlankView(KZHelper.Container);
+                            DicViews.Add(app.Id, view);
 
-                _tileNav.AdjustTitle(app, IsHome);
+                        }
+                    }
+                    return DicViews[app.Id];
+                }, delegate(Task<IContentView> task)
+                {
+                    
+                    LoadView(task.Result as Control);
+
+                    _tileNav.AdjustTitle(app, IsHome);
+                });
             }
+
+
+
+
+
+
         }
 
         private void GenerateApplications()
@@ -130,13 +148,16 @@ namespace Framework.Base.App
 
         public void LoadView(Control control)
         {
+            
             if (ownerControl.Tag != control)
             {
                 SlideFadeTransitionManager.StartTransition(ownerControl);
+
                 control.Dock = DockStyle.Fill;
                 ownerControl.Controls.Clear();
                 ownerControl.Controls.Add(control);
                 ownerControl.Tag = control;
+
                 SlideFadeTransitionManager.EndTransition();
             }
         }

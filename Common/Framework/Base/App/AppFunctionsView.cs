@@ -8,8 +8,6 @@ namespace Framework.Base.App
 {
     public partial class AppFunctionsView : KZUserControl
     {
-        private static Image _splitterImageCore;
-
         public AppFunctionsView(IUnityContainer container)
             : base(container)
         {
@@ -31,12 +29,11 @@ namespace Framework.Base.App
                 , KZHelper.KZColours.MainForeColour.HoverColour, KZHelper.KZColours.MainForeColour.HoverColour);
         }
 
-        public static Image SplitterImage
-        {
-            get { return new Bitmap(100, 10); }
-        }
+        public static Image SplitterImage => new Bitmap(100, 10);
 
-        public void InitializeButtons(IKZBindingList<IFunction> listFunctions)
+        public static Image SplitterImageCore { get; set; }
+
+        public void InitializeButtons(KZBindingList<IFunction> listFunctions)
         {
             Visible = true;
             windowsUIButtonPanel2.Buttons.Clear();

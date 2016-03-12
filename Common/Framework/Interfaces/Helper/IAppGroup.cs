@@ -1,9 +1,10 @@
-﻿using Framework.Interfaces.App;
+﻿using Framework.Base.App;
+using Framework.Interfaces.App;
 
 namespace Framework.Interfaces.Helper
 {
     public interface IAppGroup : IHelperObject
     {
-        IKZBindingList<IApp> Apps { get; set; }
+        KZBindingList<IApp> Apps { get; set; }
     }
 }

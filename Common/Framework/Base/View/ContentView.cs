@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 using DevExpress.Utils.MVVM;
+using DevExpress.XtraEditors.DXErrorProvider;
 using Framework.Base.App;
 using Framework.Interfaces.Helper;
 using Framework.Interfaces.View;
@@ -17,43 +19,29 @@ namespace Framework.Base.View
         public ContentView()
         {
             InitializeComponent();
-        }
 
+            
+        }
 
         public ContentView(IUnityContainer container) : base(container)
         {
             InitializeComponent();
             Load += ContentView_Load;
-            AssignName();
-            BindEvent();
         }
 
 
-        public IApp App
+        protected IApp App
         {
             get { return _app; }
             set
             {
                 _app = value;
-
-                panelFunctions.Visible = _app != null && _app.Functions != null && _app.Functions.Any();
-
-                if (panelFunctions.Visible)
-                {
-                    var functionsButtons = new AppFunctionsView(KZHelper.Container);
-
-                    functionsButtons.InitializeButtons(_app.Functions);
-
-                    panelFunctions.Controls.Clear();
-
-                    panelFunctions.Controls.Add(functionsButtons);
-                    functionsButtons.Dock = DockStyle.Fill;
-                }
             }
         }
 
         public virtual void AssignName()
         {
+
         }
 
         public virtual void BindEvent()
@@ -71,18 +59,29 @@ namespace Framework.Base.View
             App = app;
         }
 
-        protected MVVMContextFluentAPI<T> GetModelBindingManager<T>(T model) where T : class
-        {
-            var mvvmContext = new MVVMContext();
-            mvvmContext.ContainerControl = this;
-            mvvmContext.SetViewModel(typeof (T), model);
-            var fluentAPI = mvvmContext.OfType<T>();
-            return fluentAPI;
-        }
 
+        private void BindFunctions()
+        {
+            panelFunctions.Visible = _app?.Functions != null && _app.Functions.Any();
+
+            if (panelFunctions.Visible)
+            {
+                var functionsButtons = new AppFunctionsView(KZHelper.Container);
+
+                functionsButtons.InitializeButtons(_app.Functions);
+
+                panelFunctions.Controls.Clear();
+
+                panelFunctions.Controls.Add(functionsButtons);
+                functionsButtons.Dock = DockStyle.Fill;
+            }
+        }
 
         private void ContentView_Load(object sender, EventArgs e)
         {
+            AssignName();
+            BindEvent();
+            BindFunctions();
             BindModel();
         }
 

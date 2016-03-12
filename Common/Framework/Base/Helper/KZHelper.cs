@@ -2,12 +2,12 @@
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
-using DataContext;
 using Framework.Base.App;
 using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
 using Main.Tables.Master.User;
 using Microsoft.Practices.Unity;
+using Repository;
 
 namespace Framework.Base.Helper
 {
@@ -19,6 +19,7 @@ namespace Framework.Base.Helper
         }
 
 
+        
         public void InitAppFunctions()
         {
             var apps = Container.Resolve<IApps>();
@@ -71,14 +72,16 @@ namespace Framework.Base.Helper
         public IUnityContainer Container { get; set; }
 
         public IKZColours KZColours => Container.Resolve<IKZColours>();
+        public IGridLookUpTypes GridLookUpTypes => Container.Resolve<IGridLookUpTypes>();
 
         public IKZFonts KZFonts => Container.Resolve<IKZFonts>();
 
         public IKZBinaryFile KZBinaryFile => Container.Resolve<IKZBinaryFile>();
 
         public IKZAppearanceSetter KZAppearanceSetter => Container.Resolve<IKZAppearanceSetter>();
-        public IKZBindingList<IApp> Apps { get; private set; }
+        public KZBindingList<IApp> Apps { get; private set; }
         public IKZAsynchronousTask KZAsynchronousTask => Container.Resolve<IKZAsynchronousTask>();
         public IKZMessage KZMessage => Container.Resolve<IKZMessage>();
+        public IKZHelperMessage KZHelperMessage => Container.Resolve<IKZHelperMessage>();
     }
 }

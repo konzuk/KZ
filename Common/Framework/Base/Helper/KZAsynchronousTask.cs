@@ -50,6 +50,36 @@ namespace Framework.Base.Helper
 
             return task;
         }
+        public Task<TResult> StartTask<TResult>(Func<TResult> dowork, Action<Task<TResult>> completeWork )
+        {
+            if (_tasks.Count == 0)
+            {
+                ProgressAction?.Invoke();
+            }
+            
+            var task = _factory.StartNew(dowork);
+
+            var completeTask = task.ContinueWith(completeWork, TaskScheduler.FromCurrentSynchronizationContext());
+            completeTask.ContinueWith(EndProgess, TaskScheduler.FromCurrentSynchronizationContext());
+
+            _tasks.Add(completeTask);
+
+            return task;
+        }
+
+        public void StartNormalTask(Action dowork)
+        {
+            if (_tasks.Count == 0)
+            {
+                ProgressAction?.Invoke();
+            }
+
+            var task = _factory.StartNew(dowork);
+
+            var completeTask = task.ContinueWith(EndProgess, TaskScheduler.FromCurrentSynchronizationContext());
+
+            _tasks.Add(completeTask);
+        }
 
         public IViewBase Owner { get; set; }
 

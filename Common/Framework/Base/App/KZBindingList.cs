@@ -1,10 +1,4 @@
-﻿/***************************************************************************
- * BTRMGroup Copyright 2011                                                * 
- * SortableBindingList<T>                                                  *
- * Version 1.0, 1.1                                                        *
- * Author: vmeng1,sorng1                                                   *
- ***************************************************************************/
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +10,7 @@ namespace Framework.Base.App
 {
     [DebuggerStepThrough]
     [Serializable]
-    public class KZBindingList<T> : BindingList<T>, IKZBindingList<T>
+    public class KZBindingList<T> : BindingList<T>, IBindingList
     {
         private bool _isSorted;
         private ListSortDirection _sortDirection = ListSortDirection.Ascending;
@@ -91,17 +85,17 @@ namespace Framework.Base.App
             }
         }
 
-        public static IKZBindingList<T> CreateBindingList(IList<T> list)
+        public static KZBindingList<T> CreateBindingList(IList<T> list)
         {
             return new KZBindingList<T>(list);
         }
 
-        public static IKZBindingList<T> CreateBindingList(IEnumerable<T> list)
+        public static KZBindingList<T> CreateBindingList(IEnumerable<T> list)
         {
             return new KZBindingList<T>(list);
         }
 
-        public static IKZBindingList<T> CreateBindingList()
+        public static KZBindingList<T> CreateBindingList()
         {
             return new KZBindingList<T>();
         }

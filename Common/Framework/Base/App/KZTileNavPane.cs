@@ -30,7 +30,7 @@ namespace Framework.Base.App
         public Form View { get; set; }
 
 
-        public IKZBindingList<IApp> ListApps
+        public KZBindingList<IApp> ListApps
         {
             set
             {

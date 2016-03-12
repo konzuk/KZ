@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using Framework.Base.App;
 using Framework.Interfaces.App;
 
 namespace Framework.Interfaces.Helper
@@ -8,6 +9,6 @@ namespace Framework.Interfaces.Helper
         IAppCategory AppCategory { get; set; }
         IAppGroup AppGroup { get; set; }
         Image Image { get; set; }
-        IKZBindingList<IFunction> Functions { get; set; }
+        KZBindingList<IFunction> Functions { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
+using Framework.Base.App;
 using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
 using Framework.Interfaces.Model;
@@ -22,7 +23,7 @@ namespace Framework.Base.View
         }
 
         public IHomeModel HomeModel { get; set; }
-        public IKZBindingList<IApp> ListApps { get; set; }
+        public KZBindingList<IApp> ListApps { get; set; }
 
         private Dictionary<int, TileGroup> DicTileGroups { get; } = new Dictionary<int, TileGroup>();
 

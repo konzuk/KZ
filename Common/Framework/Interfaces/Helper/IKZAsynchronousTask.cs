@@ -10,6 +10,8 @@ namespace Framework.Interfaces.Helper
 
         Task<TResult> StartTask<TResult>(Func<object, TResult> dowork, Action<Task<TResult>> completeWork,
             IKZMessage message);
+        Task<TResult> StartTask<TResult>(Func<TResult> dowork, Action<Task<TResult>> completeWork);
+       
 
         void RemoveAllTask();
     }

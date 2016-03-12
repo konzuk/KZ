@@ -32,7 +32,6 @@ namespace GridLookUpEdit_MultiAutoSearch
             List<CriteriaOperator> subStringOperators = new List<CriteriaOperator>();
             foreach (string sString in text.Split(' '))
             {
-                string exp = LikeData.CreateStartsWithPattern(sString);
                 List<CriteriaOperator> columnsOperators = new List<CriteriaOperator>();
                 FunctionOperatorType opType = FunctionOperatorType.Contains;
                 foreach (GridColumn col in Columns)

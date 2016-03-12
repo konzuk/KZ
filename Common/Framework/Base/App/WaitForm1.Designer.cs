@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(246, 73);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // progressPanel1
+            // ProgressPanel
             // 
             this.ProgressPanel.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.ProgressPanel.Appearance.Options.UseBackColor = true;
@@ -66,6 +66,7 @@
             this.ProgressPanel.Size = new System.Drawing.Size(246, 39);
             this.ProgressPanel.TabIndex = 0;
             this.ProgressPanel.Text = "progressPanel1";
+            this.ProgressPanel.WaitAnimationType = DevExpress.Utils.Animation.WaitingAnimatorType.Ring;
             // 
             // WaitForm1
             // 
@@ -77,6 +78,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.Name = "WaitForm1";
+            this.ShowOnTopMode = DevExpress.XtraWaitForm.ShowFormOnTopMode.ObsoleteAboveParent;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -1,7 +1,9 @@
 ﻿using Framework.Base.App;
 using Framework.Base.Helper;
+using Framework.Base.Model;
 using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
+using Framework.Interfaces.Model;
 using Microsoft.Practices.Unity;
 
 namespace Framework
@@ -18,6 +20,7 @@ namespace Framework
             container.RegisterType<IKZBinaryFile, KZBinaryFile>(new ContainerControlledLifetimeManager());
             container.RegisterType<IKZAppearanceSetter, KZAppearanceSetter>(new ContainerControlledLifetimeManager());
             container.RegisterType<IKZAsynchronousTask, KZAsynchronousTask>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IGridLookUpTypes, GridLookUpTypes>(new ContainerControlledLifetimeManager());
 
 
             container.RegisterType<IApp, App>();
@@ -27,7 +30,12 @@ namespace Framework
             container.RegisterType<IApps, Apps>();
             container.RegisterType<IFunctions, Functions>();
 
+
+
+
             container.RegisterType<IKZMessage, KZMessage>();
+            container.RegisterType<ICustomComboBoxModel, CustomComboBoxModel>();
+            container.RegisterType<IKZHelperMessage, KZHelperMessage>();
         }
     }
 }

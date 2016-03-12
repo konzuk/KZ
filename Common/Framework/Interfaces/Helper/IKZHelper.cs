@@ -1,4 +1,5 @@
-﻿using Framework.Interfaces.App;
+﻿using Framework.Base.App;
+using Framework.Interfaces.App;
 using Microsoft.Practices.Unity;
 
 namespace Framework.Interfaces.Helper
@@ -10,10 +11,12 @@ namespace Framework.Interfaces.Helper
         IKZFonts KZFonts { get; }
         IKZBinaryFile KZBinaryFile { get; }
         IKZAppearanceSetter KZAppearanceSetter { get; }
-        IKZBindingList<IApp> Apps { get; }
+        KZBindingList<IApp> Apps { get; }
 
         IKZAsynchronousTask KZAsynchronousTask { get; }
         IKZMessage KZMessage { get; }
+
+        IGridLookUpTypes GridLookUpTypes { get; }
 
         void InitAppFunctions();
     }

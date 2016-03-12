@@ -1,5 +1,5 @@
 ﻿using System;
-using DevExpress.Utils.MVVM;
+using System.Windows.Forms;
 using Framework.Base.App;
 using Framework.Interfaces.View;
 using Microsoft.Practices.Unity;
@@ -18,18 +18,95 @@ namespace Framework.Base.View
         {
             InitializeComponent();
             labelTitle.Font = KZHelper.KZFonts.HeaderFont;
-            simpleButton1.Font = KZHelper.KZFonts.ButtonFont;
-            simpleButton2.Font = KZHelper.KZFonts.ButtonFont;
-            simpleButton3.Font = KZHelper.KZFonts.ButtonFont;
-            AssignName();
-            BindEvent();
+            simpleButtonSaveNew.Font = KZHelper.KZFonts.ButtonFont;
+            simpleButtonSave.Font = KZHelper.KZFonts.ButtonFont;
+            simpleButtonClose.Font = KZHelper.KZFonts.ButtonFont;
+            
             Load += ContentView_Load;
+            simpleButtonClose.Click += SimpleButtonClose_Click;
+            simpleButtonSave.Click += SimpleButtonSave_Click;
+            simpleButtonSaveNew.Click += SimpleButtonSaveNew_Click;
+
+            simpleButtonClose.Text = Resource.translate.Close;
+            simpleButtonSave.Text = Resource.translate.Save;
+            simpleButtonSaveNew.Text = Resource.translate.SaveNew;
+
         }
 
-        public string Title
+        private void SimpleButtonSaveNew_Click(object sender, EventArgs e)
+        {
+            this.OnSaveNew();
+        }
+
+        private void SimpleButtonSave_Click(object sender, EventArgs e)
+        {
+            this.OnSave();
+        }
+
+        private void SimpleButtonClose_Click(object sender, EventArgs e)
+        {
+            this.OnClose();
+        }
+
+        protected virtual void OnClose()
+        {
+            
+        }
+        protected virtual void OnSave()
+        {
+
+        }
+        protected virtual void OnSaveNew()
+        {
+
+        }
+        protected void CloseOnSaveComplete()
+        {
+            this.simpleButtonClose.DialogResult = DialogResult.OK;
+            this.simpleButtonClose.PerformClick();
+        }
+
+        protected string Title
         {
             get { return labelTitle.Text; }
             set { labelTitle.Text = value; }
+        }
+        protected string SaveText
+        {
+            get { return this.simpleButtonSave.Text; }
+            set { this.simpleButtonSave.Text = value; }
+        }
+        protected string SaveNewText
+        {
+            get { return this.simpleButtonSaveNew.Text; }
+            set { this.simpleButtonSaveNew.Text = value; }
+        }
+        protected string CloseText
+        {
+            get { return this.simpleButtonClose.Text; }
+            set { this.simpleButtonClose.Text = value; }
+        }
+
+        protected bool SaveVisible
+        {
+            get { return this.simpleButtonSave.Visible; }
+            set { this.simpleButtonSave.Visible = value; }
+        }
+        protected bool SaveNewVisible
+        {
+            get { return this.simpleButtonSaveNew.Visible; }
+            set { this.simpleButtonSaveNew.Visible = value; }
+        }
+
+        protected bool SaveEnabled
+        {
+            get { return this.simpleButtonSave.Enabled; }
+            set { this.simpleButtonSave.Enabled = value; }
+        }
+        protected bool SaveNewEnabled
+        {
+            get { return this.simpleButtonSaveNew.Enabled; }
+            set { this.simpleButtonSaveNew.Enabled = value; }
         }
 
         public virtual void AssignName()
@@ -45,18 +122,11 @@ namespace Framework.Base.View
         }
 
         public IContentView OwnerView { get; set; }
-
-
-        protected MVVMContextFluentAPI<T> GetModelBindingManager<T>(T model) where T : class
-        {
-            var mvvmContext = new MVVMContext {ContainerControl = this};
-            mvvmContext.SetViewModel(typeof (T), model);
-            var fluentAPI = mvvmContext.OfType<T>();
-            return fluentAPI;
-        }
-
+        
         private void ContentView_Load(object sender, EventArgs e)
         {
+            AssignName();
+            BindEvent();
             BindModel();
         }
     }
