@@ -1,9 +1,10 @@
 ﻿using System.Collections.ObjectModel;
-using Framework.Interfaces.Model.Common;
-using Framework.Interfaces.Model.Employee;
+using Framework.Base.Model;
+using MainInfrastructure.Model.Common;
+using MainInfrastructure.Model.Employee;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Employee
+namespace MainModel.Employee
 {
     public class DepartmentModel : ModelBaseDecorator, IDepartmentModel
     {

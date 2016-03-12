@@ -30,6 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Framework">
+      <HintPath>..\..\..\Lib\Framework\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MainInfrastructure">
+      <HintPath>..\..\..\Lib\Main\MainInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Resource">
+      <HintPath>..\..\..\Lib\Framework\Resource.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,9 +55,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CompanyModel.cs" />
+    <Compile Include="Common\CurrencyModel.cs" />
+    <Compile Include="Contact\ContactMemberTypeModel.cs" />
+    <Compile Include="Contact\ContactModel.cs" />
+    <Compile Include="Contact\ContactTypeModel.cs" />
+    <Compile Include="Contact\GenderModel.cs" />
+    <Compile Include="Employee\DepartmentModel.cs" />
+    <Compile Include="Employee\EmployeeModel.cs" />
+    <Compile Include="Employee\PositionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Customer\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)\Lib\Main" /y</PostBuildEvent>

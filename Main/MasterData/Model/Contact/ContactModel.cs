@@ -1,7 +1,9 @@
-﻿using Framework.Interfaces.Model.Contact;
+﻿using System;
+using Framework.Base.Model;
+using MainInfrastructure.Model.Contact;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Contact
+namespace MainModel.Contact
 {
     public class ContactModel : ModelBaseDecorator, IContactModel
     {
@@ -16,6 +18,9 @@ namespace Framework.Base.Model.Contact
         private IGenderModel _genderModel;
 
         private string _note;
+
+        private DateTime _dateOfBirth;
+        private string _placeOfBirth;
 
 
         public ContactModel(IUnityContainer container) : base(container)
@@ -55,10 +60,7 @@ namespace Framework.Base.Model.Contact
         public string PhotoPath { get; set; }
 
 
-        public int ContactMemberTypeId
-        {
-            get { return ContactMemberTypeModel == null ? 0 : ContactMemberTypeModel.Id; }
-        }
+        public int ContactMemberTypeId => ContactMemberTypeModel?.Id ?? 0;
 
         public IContactMemberTypeModel ContactMemberTypeModel
         {
@@ -70,15 +72,9 @@ namespace Framework.Base.Model.Contact
             }
         }
 
-        public string ContactMemberTypeName
-        {
-            get { return ContactMemberTypeModel == null ? "" : ContactMemberTypeModel.Name; }
-        }
+        public string ContactMemberTypeName => ContactMemberTypeModel == null ? "" : ContactMemberTypeModel.Name;
 
-        public int GenderId
-        {
-            get { return GenderModel == null ? 0 : GenderModel.Id; }
-        }
+        public int GenderId => GenderModel?.Id ?? 0;
 
         public IGenderModel GenderModel
         {
@@ -90,7 +86,7 @@ namespace Framework.Base.Model.Contact
             }
         }
 
-        public string GenderName { get; private set; }
+        public string GenderName => GenderModel == null ? "" : GenderModel.Name;
 
         public string ContactAddress
         {
@@ -109,6 +105,26 @@ namespace Framework.Base.Model.Contact
             {
                 _contactAddressInLatin = value;
                 RaisePropertyChanged(nameof(ContactAddressInLatin));
+            }
+        }
+
+        public DateTime DateOfBirth
+        {
+            get { return _dateOfBirth; }
+            set
+            {
+                _dateOfBirth = value; 
+                RaisePropertyChanged(nameof(DateOfBirth));
+            }
+        }
+
+        public string PlaceOfBirth
+        {
+            get { return _placeOfBirth; }
+            set
+            {
+                _placeOfBirth = value;
+                RaisePropertyChanged(nameof(PlaceOfBirth));
             }
         }
     }

@@ -1,7 +1,8 @@
-﻿using Framework.Interfaces.Model.Common;
+﻿using Framework.Base.Model;
+using MainInfrastructure.Model.Common;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Common
+namespace MainModel.Common
 {
     public class CurrencyModel : ModelBaseDecorator, ICurrencyModel
     {

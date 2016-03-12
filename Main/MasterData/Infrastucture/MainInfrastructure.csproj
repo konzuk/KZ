@@ -44,6 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\IContactController.cs" />
+    <Compile Include="Model\Common\ICompanyModel.cs" />
+    <Compile Include="Model\Common\ICurrencyModel.cs" />
+    <Compile Include="Model\Contact\IContactMemberTypeModel.cs" />
+    <Compile Include="Model\Contact\IContactModel.cs" />
+    <Compile Include="Model\Contact\IContactTypeModel.cs" />
+    <Compile Include="Model\Contact\IGenderModel.cs" />
+    <Compile Include="Model\Employee\IDepartmentModel.cs" />
+    <Compile Include="Model\Employee\IEmployeeModel.cs" />
+    <Compile Include="Model\Employee\IPositionModel.cs" />
+    <Compile Include="Model\User\IUserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

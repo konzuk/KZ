@@ -1,7 +1,8 @@
-﻿using Framework.Interfaces.Model.Employee;
+﻿using Framework.Base.Model;
+using MainInfrastructure.Model.Employee;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Employee
+namespace MainModel.Employee
 {
     public class PositionModel : ModelBaseDecorator, IPositionModel
     {

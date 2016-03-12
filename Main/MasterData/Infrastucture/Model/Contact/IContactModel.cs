@@ -1,4 +1,5 @@
-﻿using Framework.Interfaces.Model;
+﻿using System;
+using Framework.Interfaces.Model;
 
 namespace MainInfrastructure.Model.Contact
 {
@@ -16,5 +17,13 @@ namespace MainInfrastructure.Model.Contact
         string GenderName { get; }
         string ContactAddress { get; set; }
         string ContactAddressInLatin { get; set; }
+
+        DateTime DateOfBirth { get; set; }
+        string PlaceOfBirth { get; set; }
+
+        int Id { get; set; }
+        string Name { get; set; }
+        string NameInLatin { get; set; }
+        string Code { get; set; }
     }
 }

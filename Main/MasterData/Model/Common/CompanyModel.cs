@@ -1,8 +1,8 @@
-﻿using Framework.Base.Model.Contact;
-using Framework.Interfaces.Model.Common;
+﻿using MainInfrastructure.Model.Common;
+using MainModel.Contact;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Common
+namespace MainModel.Common
 {
     public class CompanyModel : ContactModel, ICompanyModel
     {
@@ -12,10 +12,7 @@ namespace Framework.Base.Model.Common
         {
         }
 
-        public int CurrencyId
-        {
-            get { return CurrencyModel == null ? 0 : CurrencyModel.Id; }
-        }
+        public int CurrencyId => CurrencyModel?.Id ?? 0;
 
         public ICurrencyModel CurrencyModel
         {
@@ -23,13 +20,10 @@ namespace Framework.Base.Model.Common
             set
             {
                 _currencyModel = value;
-                RaisePropertyChanged("CurrencyModel");
+                RaisePropertyChanged(nameof(CurrencyModel));
             }
         }
 
-        public string CurrencyName
-        {
-            get { return CurrencyModel == null ? "" : CurrencyModel.Name; }
-        }
+        public string CurrencyName => CurrencyModel == null ? "" : CurrencyModel.Name;
     }
 }

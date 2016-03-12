@@ -1,9 +1,9 @@
 ﻿using System;
-using Framework.Base.Model.Contact;
-using Framework.Interfaces.Model.Employee;
+using MainInfrastructure.Model.Employee;
+using MainModel.Contact;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Employee
+namespace MainModel.Employee
 {
     public class EmployeeModel : ContactModel, IEmployeeModel
     {
@@ -11,31 +11,18 @@ namespace Framework.Base.Model.Employee
         {
         }
 
-        public int PositionId
-        {
-            get { return PositionModel == null ? 0 : PositionModel.Id; }
-        }
+        public int PositionId => PositionModel?.Id ?? 0;
 
         public IPositionModel PositionModel { get; set; }
 
-        public string PositionName
-        {
-            get { return PositionModel == null ? "" : PositionModel.Name; }
-        }
+        public string PositionName => PositionModel == null ? "" : PositionModel.Name;
 
-        public int DepartmentId
-        {
-            get { return DepartmentModel == null ? 0 : DepartmentModel.Id; }
-        }
+        public int DepartmentId => DepartmentModel?.Id ?? 0;
 
         public IDepartmentModel DepartmentModel { get; set; }
 
-        public string DepartmentName
-        {
-            get { return DepartmentModel == null ? "" : DepartmentModel.Name; }
-        }
-
-        public DateTime DateOfBirth { get; set; }
+        public string DepartmentName => DepartmentModel == null ? "" : DepartmentModel.Name;
+        
         public DateTime RegisterDate { get; set; }
         public bool IsResigned { get; set; }
         public DateTime ResignedDate { get; set; }

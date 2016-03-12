@@ -1,7 +1,8 @@
-﻿using Framework.Interfaces.Model.Contact;
+﻿using Framework.Base.Model;
+using MainInfrastructure.Model.Contact;
 using Microsoft.Practices.Unity;
 
-namespace Framework.Base.Model.Contact
+namespace MainModel.Contact
 {
     public class GenderModel : ModelBaseDecorator, IGenderModel
     {

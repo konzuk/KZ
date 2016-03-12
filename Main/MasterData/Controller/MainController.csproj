@@ -30,6 +30,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Entity">
+      <HintPath>..\..\..\Lib\common\Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="Framework">
+      <HintPath>..\..\..\Lib\Framework\Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MainInfrastructure">
+      <HintPath>..\..\..\Lib\Main\MainInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository">
+      <HintPath>..\..\..\Lib\common\Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Resource">
+      <HintPath>..\..\..\Lib\Framework\Resource.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact\ContactController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
