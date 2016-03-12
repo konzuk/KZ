@@ -46,18 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Journal\Loan\IAddEditLoadJournalWDC.cs" />
-    <Compile Include="Journal\Loan\ILoanJournalWDC.cs" />
+    <Compile Include="Controller\Journal\Loan\ILoanJournalWDCController.cs" />
+    <Compile Include="Model\Journal\Loan\IJournalModel.cs" />
+    <Compile Include="Model\Journal\Loan\ILoanJournalWDCModel.cs" />
+    <Compile Include="View\Journal\Loan\IAddEditLoadJournalWDC.cs" />
+    <Compile Include="View\Journal\Loan\ILoanJournalWDC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Order\.gitignore" />
-    <None Include="Quote\.gitignore" />
+    <None Include="Controller\Order\.gitignore" />
+    <None Include="Controller\Quote\.gitignore" />
+    <None Include="Model\Order\.gitignore" />
+    <None Include="Model\Quote\.gitignore" />
+    <None Include="View\Order\.gitignore" />
+    <None Include="View\Quote\.gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Journal\Bill\" />
-    <Folder Include="Journal\Invoice\" />
-    <Folder Include="Journal\POS\" />
+    <Folder Include="Controller\Journal\Bill\" />
+    <Folder Include="Controller\Journal\Invoice\" />
+    <Folder Include="Controller\Journal\POS\" />
+    <Folder Include="Model\Journal\Bill\" />
+    <Folder Include="Model\Journal\Invoice\" />
+    <Folder Include="Model\Journal\POS\" />
+    <Folder Include="View\Journal\Bill\" />
+    <Folder Include="View\Journal\Invoice\" />
+    <Folder Include="View\Journal\POS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
