@@ -1,4 +1,10 @@
-﻿using Framework.Base.View;
+﻿using System;
+using System.Windows.Forms;
+using AccountingInfrastructure.Model.Journal.Loan;
+using DevExpress.Data.Helpers;
+using DevExpress.Utils.MVVM;
+using DevExpress.XtraEditors;
+using Framework.Base.View;
 using Microsoft.Practices.Unity;
 
 namespace AccountingView.Loan
@@ -9,6 +15,8 @@ namespace AccountingView.Loan
         {
             InitializeComponent();
         }
+
+        public ILoanJournalWDCModel LoanJournalWDCModel { get; set; }
 
         public override void AssignName()
         {
@@ -44,12 +52,30 @@ namespace AccountingView.Loan
 
         }
 
+        private void BindCustomer()
+        {
+            this.customGridLookUpEditCustomer.GridLookUpType = KZHelper.GridLookUpTypes.Customer;
+            
+            //customGridLookUpEditCustomer.InitLookup(KZHelper.Container, LoanJournalWDCModel.DCModel);
 
+        }
 
         public override void BindModel()
         {
-            var flu = GetModelBindingManager()
+            LoanJournalWDCModel = KZHelper.Container.Resolve<ILoanJournalWDCModel>();
+
+            this.BindCustomer();
+
+            var bindManager = base.GetModelBindingManager(LoanJournalWDCModel);
+
+           
+            bindManager.SetBinding(textEditAmount, e => e.EditValue, x => x.Amount);
+            AssignValidationControl(textEditAmount, LoanJournalWDCModel.AmountValidation);
+            
+
         }
+
+       
 
         public override void BindEvent()
         {

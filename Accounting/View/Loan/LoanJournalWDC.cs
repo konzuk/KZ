@@ -1,7 +1,7 @@
 ﻿using System.Resources;
 using System.Threading;
 using System.Windows.Forms;
-using AccountingInfrastructure.Journal.Loan;
+using AccountingInfrastructure.View.Journal.Loan;
 using DevExpress.XtraEditors;
 using Framework.Base.App;
 using Framework.Base.Model;
@@ -19,9 +19,6 @@ namespace AccountingView.Loan
         public LoanJournalWDC(IUnityContainer container): base(container)
         {
             InitializeComponent();
-
-            this.customGridLookUpEditCustomer.GridLookUpType = KZHelper.GridLookUpTypes.Customer;
-            this.customGridLookUpEditStatus.GridLookUpType = KZHelper.GridLookUpTypes.CustomList;
         }
 
         public override void LoadAppFunction(IApp app)
@@ -52,15 +49,20 @@ namespace AccountingView.Loan
 
         }
 
-        public override void BindModel()
+        private void BindCustomer()
         {
+            this.customGridLookUpEditCustomer.GridLookUpType = KZHelper.GridLookUpTypes.Customer;
 
-            var All = KZHelper.Container.Resolve<IContactModel>();
-            All.Name = "All";
-            All.Id = 0;
+            var allCustomer = KZHelper.Container.Resolve<IContactModel>();
+            allCustomer.Name = "All";
+            allCustomer.Id = 0;
 
-            customGridLookUpEditCustomer.AdditionalModelsList = new KZBindingList<IModelBase> { All };
+            customGridLookUpEditCustomer.AdditionalModelsList = new KZBindingList<IModelBase> { allCustomer };
             customGridLookUpEditCustomer.InitLookup(KZHelper.Container, null);
+        }
+        private void BindStatus()
+        {
+            this.customGridLookUpEditStatus.GridLookUpType = KZHelper.GridLookUpTypes.CustomList;
 
             var model = KZHelper.Container.Resolve<ICustomComboBoxModel>();
             model.Name = "test";
@@ -69,8 +71,14 @@ namespace AccountingView.Loan
             model2.Name = "test2";
             model2.Id = 2;
 
-            customGridLookUpEditStatus.AdditionalModelsList = new KZBindingList<IModelBase> {model, model2};
+            customGridLookUpEditStatus.AdditionalModelsList = new KZBindingList<IModelBase> { model, model2 };
             customGridLookUpEditStatus.RefreshGridLookUp(KZHelper.Container, null);
+        }
+
+        public override void BindModel()
+        {
+            this.BindCustomer();
+            this.BindStatus();
         }
 
         
