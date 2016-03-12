@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Windows.Forms;
-using LoanProject;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity.Migrations;
+using System.Linq;
 using Main.Tables.Accounting.Account;
 using Main.Tables.Master.Common;
 using Main.Tables.Master.Contact;
@@ -8,19 +9,15 @@ using Main.Tables.Master.Contact.Employee;
 using Main.Tables.Master.Item;
 using Main.Tables.Master.Location;
 using Main.Tables.Master.User;
+using Repository;
 
-namespace DataContext.Migrations
+namespace LoanProject.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
     internal sealed class Configuration : DbMigrationsConfiguration<DatabaseContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(DatabaseContext context)

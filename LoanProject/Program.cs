@@ -3,7 +3,6 @@ using System.Data.Entity.Infrastructure;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
-using DataContext;
 using Framework;
 using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
@@ -22,7 +21,7 @@ namespace LoanProject
 
 
             string khmer = "km-KH";
-            string english = "en-US";
+            //string english = "en-US";
 
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(khmer);
 
@@ -33,6 +32,7 @@ namespace LoanProject
 
 
             FrameworkRegister.Register(container);
+            MainRegister.Register(container);
             ApplicatonsRegister.Register(container);
 
 

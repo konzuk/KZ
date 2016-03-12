@@ -44,9 +44,6 @@
     <Reference Include="AccountingView">
       <HintPath>..\Lib\Accounting\AccountingView.dll</HintPath>
     </Reference>
-    <Reference Include="DataContext">
-      <HintPath>..\Lib\common\DataContext.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Entity">
@@ -66,11 +63,26 @@
     <Reference Include="KZComponent">
       <HintPath>..\Lib\common\KZComponent.dll</HintPath>
     </Reference>
+    <Reference Include="KZRegister">
+      <HintPath>..\Lib\common\KZRegister.dll</HintPath>
+    </Reference>
+    <Reference Include="MainController">
+      <HintPath>..\Lib\Main\MainController.dll</HintPath>
+    </Reference>
+    <Reference Include="MainInfrastructure">
+      <HintPath>..\Lib\Main\MainInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MainModel">
+      <HintPath>..\Lib\Main\MainModel.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism">
       <HintPath>..\Lib\Framework\Prism4.0\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\Lib\Framework\Prism4.0\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository">
+      <HintPath>..\Lib\common\Repository.dll</HintPath>
     </Reference>
     <Reference Include="Resource">
       <HintPath>..\Lib\Framework\Resource.dll</HintPath>
@@ -91,16 +103,9 @@
   <ItemGroup>
     <Compile Include="ApplicatonsRegister.cs" />
     <Compile Include="DatabaseContext.cs" />
-    <Compile Include="Migrations\201602281755290_CreateTable.cs" />
-    <Compile Include="Migrations\201602281755290_CreateTable.Designer.cs">
-      <DependentUpon>201602281755290_CreateTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Migrations\201602281755290_CreateTable.resx">
-      <DependentUpon>201602281755290_CreateTable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
