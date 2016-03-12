@@ -6,10 +6,10 @@ using Framework.Interfaces.Model;
 
 namespace Framework.Base.Helper
 {
-    public class KZResult<T> where T: IModelBase
+    public class KZResultMessage
     {
-        public T Model { get; set; }
-        public KZBindingList<T> Models { get; set; }
-        public KZResultMessage Message { get; set; }
+       
+        public bool IsSuccess { get; set; }
+        public string Message { get; set; }
     }
 }

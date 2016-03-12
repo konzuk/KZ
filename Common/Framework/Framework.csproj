@@ -95,6 +95,7 @@
     <Compile Include="Base\Helper\KZColour.cs" />
     <Compile Include="Base\Helper\GridLookUpTypes.cs" />
     <Compile Include="Base\Helper\KZHelperMessage.cs" />
+    <Compile Include="Base\Helper\KZValidateResult.cs" />
     <Compile Include="Base\Helper\KZResult.cs" />
     <Compile Include="Base\Helper\KZMessage.cs" />
     <Compile Include="Base\Helper\AppGroups.cs" />

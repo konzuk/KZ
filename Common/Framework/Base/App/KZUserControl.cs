@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using System.Windows.Forms;
 using DevExpress.Utils.MVVM;
 using DevExpress.XtraEditors;
@@ -36,7 +37,7 @@ namespace Framework.Base.App
         }
         
 
-        protected void AssignValidationControl(Control control, Func<KZResult<IModelBase>> func, ErrorType errorType = ErrorType.Critical, ErrorIconAlignment iconAlignment = ErrorIconAlignment.MiddleRight)
+        protected void AssignValidationControl(Control control, Func<KZResultMessage> func, ErrorType errorType = ErrorType.Critical, ErrorIconAlignment iconAlignment = ErrorIconAlignment.MiddleRight)
         {
             control.CausesValidation = true;
 
@@ -67,5 +68,9 @@ namespace Framework.Base.App
             return fluentAPI;
         }
         protected IKZHelper KZHelper { get; set; }
+
+        
+
+
     }
 }
