@@ -2,7 +2,9 @@
 
 namespace AccountingInfrastructure.Journal.Loan
 {
-    public interface IAddEditLoadJournalWDC : IDialogView
+    public interface ILoanJournalWDC :IContentView
     {
+
+
     }
 }

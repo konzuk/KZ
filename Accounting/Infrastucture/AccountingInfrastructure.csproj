@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Journal\Loan\IAddEditLoadJournalWDC.cs" />
     <Compile Include="Journal\Loan\ILoanJournalWDC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

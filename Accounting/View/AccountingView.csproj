@@ -30,11 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="AccountingInfrastructure">
       <HintPath>..\..\Lib\Accounting\AccountingInfrastructure.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -47,6 +49,9 @@
     <Reference Include="KZComponent">
       <HintPath>..\..\Lib\common\KZComponent.dll</HintPath>
     </Reference>
+    <Reference Include="MainInfrastructure">
+      <HintPath>..\..\Lib\Main\MainInfrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism">
       <HintPath>..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
@@ -57,8 +62,16 @@
       <HintPath>..\..\Lib\Framework\Resource.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,6 +82,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountingViewRegister.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\AddEditLoadJournalWDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Loan\AddEditLoadJournalWDC.Designer.cs">
+      <DependentUpon>AddEditLoadJournalWDC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loan\LoanJournalWDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +108,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\AddEditLoadJournalWDC.resx">
+      <DependentUpon>AddEditLoadJournalWDC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loan\LoanJournalWDC.resx">
       <DependentUpon>LoanJournalWDC.cs</DependentUpon>
     </EmbeddedResource>
