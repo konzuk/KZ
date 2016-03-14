@@ -66,6 +66,9 @@
     <Reference Include="KZRegister">
       <HintPath>..\Lib\common\KZRegister.dll</HintPath>
     </Reference>
+    <Reference Include="KZSkinOffice">
+      <HintPath>..\Lib\Framework\KZSkinOffice.dll</HintPath>
+    </Reference>
     <Reference Include="MainController">
       <HintPath>..\Lib\Main\MainController.dll</HintPath>
     </Reference>
