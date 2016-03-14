@@ -33,7 +33,6 @@ namespace Framework.Base.App
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::Framework.Base.App.SplashScreen1), true, true);
             this.panelTop = new System.Windows.Forms.Panel();
             this.ownerControl = new System.Windows.Forms.Panel();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -56,11 +55,6 @@ namespace Framework.Base.App
             this.ownerControl.Name = "ownerControl";
             this.ownerControl.Size = new System.Drawing.Size(1280, 660);
             this.ownerControl.TabIndex = 1;
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.EnableBonusSkins = true;
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
             // AppView
             // 
@@ -89,6 +83,5 @@ namespace Framework.Base.App
 
 
         private System.Windows.Forms.Panel panelTop;
-        private DefaultLookAndFeel defaultLookAndFeel1;
     }
 }

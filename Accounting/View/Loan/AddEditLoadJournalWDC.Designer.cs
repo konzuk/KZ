@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             this.xtraTabControlInfo = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
@@ -271,10 +271,10 @@
             this.customGridLookUpEditPayType.PopUpMaxHeight = 300;
             this.customGridLookUpEditPayType.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditPayType.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject1.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject1.Options.UseFont = true;
+            serializableAppearanceObject8.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject8.Options.UseFont = true;
             this.customGridLookUpEditPayType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject8, "", null, null, true)});
             this.customGridLookUpEditPayType.Properties.NullText = "";
             this.customGridLookUpEditPayType.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditPayType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -384,10 +384,10 @@
             this.customGridLookUpEditPeriodType.PopUpMaxHeight = 300;
             this.customGridLookUpEditPeriodType.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditPeriodType.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject2.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject2.Options.UseFont = true;
+            serializableAppearanceObject1.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject1.Options.UseFont = true;
             this.customGridLookUpEditPeriodType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.customGridLookUpEditPeriodType.Properties.NullText = "";
             this.customGridLookUpEditPeriodType.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditPeriodType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -497,10 +497,10 @@
             this.customGridLookUpEditLoan.PopUpMaxHeight = 300;
             this.customGridLookUpEditLoan.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditLoan.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject3.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject3.Options.UseFont = true;
+            serializableAppearanceObject2.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject2.Options.UseFont = true;
             this.customGridLookUpEditLoan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
             this.customGridLookUpEditLoan.Properties.NullText = "";
             this.customGridLookUpEditLoan.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditLoan.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -695,10 +695,10 @@
             this.customGridLookUpEditNAT.PopUpMaxHeight = 300;
             this.customGridLookUpEditNAT.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditNAT.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject4.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject4.Options.UseFont = true;
+            serializableAppearanceObject3.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject3.Options.UseFont = true;
             this.customGridLookUpEditNAT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
             this.customGridLookUpEditNAT.Properties.NullText = "";
             this.customGridLookUpEditNAT.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditNAT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -808,10 +808,10 @@
             this.customGridLookUpEditGender.PopUpMaxHeight = 300;
             this.customGridLookUpEditGender.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditGender.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject5.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject5.Options.UseFont = true;
+            serializableAppearanceObject4.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject4.Options.UseFont = true;
             this.customGridLookUpEditGender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
             this.customGridLookUpEditGender.Properties.NullText = "";
             this.customGridLookUpEditGender.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -921,10 +921,10 @@
             this.customGridLookUpEditCIT.PopUpMaxHeight = 300;
             this.customGridLookUpEditCIT.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditCIT.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject6.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject6.Options.UseFont = true;
+            serializableAppearanceObject5.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject5.Options.UseFont = true;
             this.customGridLookUpEditCIT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject6, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, "", null, null, true)});
             this.customGridLookUpEditCIT.Properties.NullText = "";
             this.customGridLookUpEditCIT.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditCIT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -1050,10 +1050,10 @@
             this.customGridLookUpEditCustomer.PopUpMaxHeight = 300;
             this.customGridLookUpEditCustomer.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditCustomer.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject7.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject7.Options.UseFont = true;
+            serializableAppearanceObject6.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject6.Options.UseFont = true;
             this.customGridLookUpEditCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject7, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject6, "", null, null, true)});
             this.customGridLookUpEditCustomer.Properties.NullText = "";
             this.customGridLookUpEditCustomer.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditCustomer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
@@ -1451,7 +1451,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.layoutControl4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1266, 368);
+            this.xtraTabPage2.Size = new System.Drawing.Size(739, 212);
             this.xtraTabPage2.Text = "កាលវិភាគទទួល";
             // 
             // layoutControl4
@@ -1462,7 +1462,7 @@
             this.layoutControl4.Name = "layoutControl4";
             this.layoutControl4.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(514, 222, 250, 350);
             this.layoutControl4.Root = this.layoutControlGroup2;
-            this.layoutControl4.Size = new System.Drawing.Size(1266, 368);
+            this.layoutControl4.Size = new System.Drawing.Size(739, 212);
             this.layoutControl4.TabIndex = 9;
             this.layoutControl4.Text = "layoutControl4";
             // 
@@ -1471,7 +1471,7 @@
             this.gridControl.Location = new System.Drawing.Point(12, 12);
             this.gridControl.MainView = this.gridView;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(1242, 344);
+            this.gridControl.Size = new System.Drawing.Size(715, 188);
             this.gridControl.TabIndex = 9;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
@@ -1627,7 +1627,7 @@
             this.layoutControlItem16});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1266, 368);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(739, 212);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem16
@@ -1635,7 +1635,7 @@
             this.layoutControlItem16.Control = this.gridControl;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(1246, 348);
+            this.layoutControlItem16.Size = new System.Drawing.Size(719, 192);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
             // 
