@@ -1,33 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using DevExpress.XtraEditors.Registrator;
-using DevExpress.XtraEditors.ViewInfo;
-using DevExpress.XtraEditors.Drawing;
-using DevExpress.XtraEditors;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
-using DevExpress.XtraEditors.Repository;
-using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.Data.Filtering.Helpers;
-using DevExpress.Data.Filtering;
 using DevExpress.Data.PLinq;
 using DevExpress.Utils;
+using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
-using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraEditors.Drawing;
+using DevExpress.XtraEditors.Registrator;
+using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraEditors.ViewInfo;
 using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraGrid.Views.Grid;
 using Framework.Base.App;
 using Framework.Base.Helper;
-using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
 using Framework.Interfaces.Model;
 using MainInfrastructure.Controller;
 using MainInfrastructure.Model.Contact;
 using Microsoft.Practices.Unity;
 
-namespace GridLookUpEdit_MultiAutoSearch
+namespace KZComponent.Component
 {
     [UserRepositoryItem("RegisterCustomGridLookUpEdit")]
     public class RepositoryItemCustomGridLookUpEdit : RepositoryItemGridLookUpEdit

@@ -1,4 +1,6 @@
-﻿namespace AccountingView.Loan
+﻿using KZComponent.Component;
+
+namespace AccountingView.Loan
 {
     partial class LoanJournalWDC
     {
@@ -43,10 +45,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.textEditSearch = new DevExpress.XtraEditors.TextEdit();
-            this.customGridLookUpEditCustomer = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView2 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
-            this.customGridLookUpEditStatus = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView1 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
+            this.customGridLookUpEditCustomer = new CustomGridLookUpEdit();
+            this.customGridView2 = new CustomGridView();
+            this.customGridLookUpEditStatus = new CustomGridLookUpEdit();
+            this.customGridView1 = new CustomGridView();
             this.checkEditIsAllDate = new DevExpress.XtraEditors.CheckEdit();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -765,8 +767,8 @@
         #endregion
 
         private DevExpress.XtraEditors.TextEdit textEditSearch;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditStatus;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView1;
+        private CustomGridLookUpEdit customGridLookUpEditStatus;
+        private CustomGridView customGridView1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemStatus;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemSearch;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemGridControl;
@@ -786,9 +788,9 @@
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraGrid.Columns.GridColumn Amount;
         private DevExpress.XtraGrid.Columns.GridColumn Status;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView2;
+        private CustomGridView customGridView2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemCustomer;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditCustomer;
+        private CustomGridLookUpEdit customGridLookUpEditCustomer;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;

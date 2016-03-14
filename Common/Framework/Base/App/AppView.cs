@@ -115,12 +115,7 @@ namespace Framework.Base.App
                     _tileNav.AdjustTitle(app, IsHome);
                 });
             }
-
-
-
-
-
-
+            
         }
 
         private void GenerateApplications()

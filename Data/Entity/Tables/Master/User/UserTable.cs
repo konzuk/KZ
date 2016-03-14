@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Accounting.Journal;
-using Main.Tables.Master.Contact.Employee;
+using Entity.Tables.Accounting.Journal;
+using Entity.Tables.Master.Contact.Employee;
 
-namespace Main.Tables.Master.User
+namespace Entity.Tables.Master.User
 {
     public class UserTable : TableMasterObjectBase
     {

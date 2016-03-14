@@ -1,8 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Main.Tables
+namespace Entity.Tables
 {
     public abstract class TableBase
     {

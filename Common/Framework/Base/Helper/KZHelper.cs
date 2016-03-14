@@ -2,10 +2,10 @@
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
+using Entity.Tables.Master.User;
 using Framework.Base.App;
 using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
-using Main.Tables.Master.User;
 using Microsoft.Practices.Unity;
 using Repository;
 

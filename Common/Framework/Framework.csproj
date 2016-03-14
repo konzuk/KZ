@@ -54,6 +54,9 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\..\Lib\Framework\EntityFramework\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="KZSkinOffice">
+      <HintPath>..\..\Lib\Framework\KZSkinOffice.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism">
       <HintPath>..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
@@ -224,6 +227,9 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SkinRegistration.cs">
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,6 @@
-﻿namespace AccountingView.Loan
+﻿using KZComponent.Component;
+
+namespace AccountingView.Loan
 {
     partial class AddEditLoadJournalWDC
     {
@@ -28,22 +30,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             this.xtraTabControlInfo = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
-            this.customGridLookUpEditPayType = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView7 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
-            this.customGridLookUpEditPeriodType = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView6 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
-            this.customGridLookUpEditLoan = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView5 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
+            this.customGridLookUpEditPayType = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView7 = new KZComponent.Component.CustomGridView();
+            this.customGridLookUpEditPeriodType = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView6 = new KZComponent.Component.CustomGridView();
+            this.customGridLookUpEditLoan = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView5 = new KZComponent.Component.CustomGridView();
             this.textEditRate = new DevExpress.XtraEditors.TextEdit();
             this.textEditPeriod = new DevExpress.XtraEditors.TextEdit();
             this.textEditAmount = new DevExpress.XtraEditors.TextEdit();
@@ -53,16 +55,16 @@
             this.textEditDIS = new DevExpress.XtraEditors.TextEdit();
             this.textEditVI = new DevExpress.XtraEditors.TextEdit();
             this.dateEditDateTimeDOB = new DevExpress.XtraEditors.DateEdit();
-            this.customGridLookUpEditNAT = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView4 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
-            this.customGridLookUpEditGender = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView3 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
-            this.customGridLookUpEditCIT = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView1 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
+            this.customGridLookUpEditNAT = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView4 = new KZComponent.Component.CustomGridView();
+            this.customGridLookUpEditGender = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView3 = new KZComponent.Component.CustomGridView();
+            this.customGridLookUpEditCIT = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView1 = new KZComponent.Component.CustomGridView();
             this.textEditPOB = new DevExpress.XtraEditors.TextEdit();
             this.textEditName = new DevExpress.XtraEditors.TextEdit();
-            this.customGridLookUpEditCustomer = new GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit();
-            this.customGridView2 = new GridLookUpEdit_MultiAutoSearch.CustomGridView();
+            this.customGridLookUpEditCustomer = new KZComponent.Component.CustomGridLookUpEdit();
+            this.customGridView2 = new KZComponent.Component.CustomGridView();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemName = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemCustomer = new DevExpress.XtraLayout.LayoutControlItem();
@@ -207,7 +209,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.layoutControl3);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1266, 368);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1262, 365);
             this.xtraTabPage1.Text = "Customer Info";
             // 
             // layoutControl3
@@ -252,7 +254,7 @@
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(117, 182, 514, 350);
             this.layoutControl3.Root = this.layoutControlGroup1;
-            this.layoutControl3.Size = new System.Drawing.Size(1266, 368);
+            this.layoutControl3.Size = new System.Drawing.Size(1262, 365);
             this.layoutControl3.TabIndex = 2;
             this.layoutControl3.Text = "layoutControl3";
             // 
@@ -264,23 +266,23 @@
             this.customGridLookUpEditPayType.GridViewWidth = 355;
             this.customGridLookUpEditPayType.InPlaceRepositoryPopUp = null;
             this.customGridLookUpEditPayType.IsAdditionalModelsOnTop = true;
-            this.customGridLookUpEditPayType.Location = new System.Drawing.Point(535, 310);
+            this.customGridLookUpEditPayType.Location = new System.Drawing.Point(534, 310);
             this.customGridLookUpEditPayType.Margin = new System.Windows.Forms.Padding(0);
             this.customGridLookUpEditPayType.Name = "customGridLookUpEditPayType";
             this.customGridLookUpEditPayType.OnSelectionChangeAction = null;
             this.customGridLookUpEditPayType.PopUpMaxHeight = 300;
             this.customGridLookUpEditPayType.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditPayType.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject8.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject8.Options.UseFont = true;
+            serializableAppearanceObject1.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject1.Options.UseFont = true;
             this.customGridLookUpEditPayType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject8, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.customGridLookUpEditPayType.Properties.NullText = "";
             this.customGridLookUpEditPayType.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditPayType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditPayType.Properties.View = this.customGridView7;
             this.customGridLookUpEditPayType.QueryModel = null;
-            this.customGridLookUpEditPayType.Size = new System.Drawing.Size(704, 30);
+            this.customGridLookUpEditPayType.Size = new System.Drawing.Size(701, 30);
             this.customGridLookUpEditPayType.StyleController = this.layoutControl3;
             this.customGridLookUpEditPayType.TabIndex = 23;
             // 
@@ -377,23 +379,23 @@
             this.customGridLookUpEditPeriodType.GridViewWidth = 355;
             this.customGridLookUpEditPeriodType.InPlaceRepositoryPopUp = null;
             this.customGridLookUpEditPeriodType.IsAdditionalModelsOnTop = true;
-            this.customGridLookUpEditPeriodType.Location = new System.Drawing.Point(847, 276);
+            this.customGridLookUpEditPeriodType.Location = new System.Drawing.Point(844, 276);
             this.customGridLookUpEditPeriodType.Margin = new System.Windows.Forms.Padding(0);
             this.customGridLookUpEditPeriodType.Name = "customGridLookUpEditPeriodType";
             this.customGridLookUpEditPeriodType.OnSelectionChangeAction = null;
             this.customGridLookUpEditPeriodType.PopUpMaxHeight = 300;
             this.customGridLookUpEditPeriodType.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditPeriodType.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject1.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject1.Options.UseFont = true;
+            serializableAppearanceObject2.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject2.Options.UseFont = true;
             this.customGridLookUpEditPeriodType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
             this.customGridLookUpEditPeriodType.Properties.NullText = "";
             this.customGridLookUpEditPeriodType.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditPeriodType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditPeriodType.Properties.View = this.customGridView6;
             this.customGridLookUpEditPeriodType.QueryModel = null;
-            this.customGridLookUpEditPeriodType.Size = new System.Drawing.Size(392, 30);
+            this.customGridLookUpEditPeriodType.Size = new System.Drawing.Size(391, 30);
             this.customGridLookUpEditPeriodType.StyleController = this.layoutControl3;
             this.customGridLookUpEditPeriodType.TabIndex = 22;
             // 
@@ -497,16 +499,16 @@
             this.customGridLookUpEditLoan.PopUpMaxHeight = 300;
             this.customGridLookUpEditLoan.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditLoan.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject2.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject2.Options.UseFont = true;
+            serializableAppearanceObject3.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject3.Options.UseFont = true;
             this.customGridLookUpEditLoan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
             this.customGridLookUpEditLoan.Properties.NullText = "";
             this.customGridLookUpEditLoan.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditLoan.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditLoan.Properties.View = this.customGridView5;
             this.customGridLookUpEditLoan.QueryModel = null;
-            this.customGridLookUpEditLoan.Size = new System.Drawing.Size(296, 30);
+            this.customGridLookUpEditLoan.Size = new System.Drawing.Size(295, 30);
             this.customGridLookUpEditLoan.StyleController = this.layoutControl3;
             this.customGridLookUpEditLoan.TabIndex = 21;
             // 
@@ -599,15 +601,15 @@
             // 
             this.textEditRate.Location = new System.Drawing.Point(116, 310);
             this.textEditRate.Name = "textEditRate";
-            this.textEditRate.Size = new System.Drawing.Size(296, 30);
+            this.textEditRate.Size = new System.Drawing.Size(295, 30);
             this.textEditRate.StyleController = this.layoutControl3;
             this.textEditRate.TabIndex = 18;
             // 
             // textEditPeriod
             // 
-            this.textEditPeriod.Location = new System.Drawing.Point(535, 276);
+            this.textEditPeriod.Location = new System.Drawing.Point(534, 276);
             this.textEditPeriod.Name = "textEditPeriod";
-            this.textEditPeriod.Size = new System.Drawing.Size(308, 30);
+            this.textEditPeriod.Size = new System.Drawing.Size(306, 30);
             this.textEditPeriod.StyleController = this.layoutControl3;
             this.textEditPeriod.TabIndex = 17;
             // 
@@ -617,7 +619,7 @@
             this.textEditAmount.Name = "textEditAmount";
             this.textEditAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.textEditAmount.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.textEditAmount.Size = new System.Drawing.Size(296, 30);
+            this.textEditAmount.Size = new System.Drawing.Size(295, 30);
             this.textEditAmount.StyleController = this.layoutControl3;
             this.textEditAmount.TabIndex = 16;
             // 
@@ -625,31 +627,31 @@
             // 
             this.textEditAddress.Location = new System.Drawing.Point(116, 144);
             this.textEditAddress.Name = "textEditAddress";
-            this.textEditAddress.Size = new System.Drawing.Size(1123, 30);
+            this.textEditAddress.Size = new System.Drawing.Size(1119, 30);
             this.textEditAddress.StyleController = this.layoutControl3;
             this.textEditAddress.TabIndex = 15;
             // 
             // textEditCOM
             // 
-            this.textEditCOM.Location = new System.Drawing.Point(441, 178);
+            this.textEditCOM.Location = new System.Drawing.Point(440, 178);
             this.textEditCOM.Name = "textEditCOM";
-            this.textEditCOM.Size = new System.Drawing.Size(184, 30);
+            this.textEditCOM.Size = new System.Drawing.Size(183, 30);
             this.textEditCOM.StyleController = this.layoutControl3;
             this.textEditCOM.TabIndex = 14;
             // 
             // textEditPRO
             // 
-            this.textEditPRO.Location = new System.Drawing.Point(1052, 178);
+            this.textEditPRO.Location = new System.Drawing.Point(1049, 178);
             this.textEditPRO.Name = "textEditPRO";
-            this.textEditPRO.Size = new System.Drawing.Size(187, 30);
+            this.textEditPRO.Size = new System.Drawing.Size(186, 30);
             this.textEditPRO.StyleController = this.layoutControl3;
             this.textEditPRO.TabIndex = 13;
             // 
             // textEditDIS
             // 
-            this.textEditDIS.Location = new System.Drawing.Point(748, 178);
+            this.textEditDIS.Location = new System.Drawing.Point(746, 178);
             this.textEditDIS.Name = "textEditDIS";
-            this.textEditDIS.Size = new System.Drawing.Size(181, 30);
+            this.textEditDIS.Size = new System.Drawing.Size(180, 30);
             this.textEditDIS.StyleController = this.layoutControl3;
             this.textEditDIS.TabIndex = 12;
             // 
@@ -657,7 +659,7 @@
             // 
             this.textEditVI.Location = new System.Drawing.Point(116, 178);
             this.textEditVI.Name = "textEditVI";
-            this.textEditVI.Size = new System.Drawing.Size(202, 30);
+            this.textEditVI.Size = new System.Drawing.Size(201, 30);
             this.textEditVI.StyleController = this.layoutControl3;
             this.textEditVI.TabIndex = 11;
             // 
@@ -676,7 +678,7 @@
             this.dateEditDateTimeDOB.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dateEditDateTimeDOB.Properties.Mask.BeepOnError = true;
             this.dateEditDateTimeDOB.Properties.Mask.EditMask = "dd/MM/yyyy";
-            this.dateEditDateTimeDOB.Size = new System.Drawing.Size(296, 30);
+            this.dateEditDateTimeDOB.Size = new System.Drawing.Size(295, 30);
             this.dateEditDateTimeDOB.StyleController = this.layoutControl3;
             this.dateEditDateTimeDOB.TabIndex = 10;
             // 
@@ -688,23 +690,23 @@
             this.customGridLookUpEditNAT.GridViewWidth = 355;
             this.customGridLookUpEditNAT.InPlaceRepositoryPopUp = null;
             this.customGridLookUpEditNAT.IsAdditionalModelsOnTop = true;
-            this.customGridLookUpEditNAT.Location = new System.Drawing.Point(824, 76);
+            this.customGridLookUpEditNAT.Location = new System.Drawing.Point(822, 76);
             this.customGridLookUpEditNAT.Margin = new System.Windows.Forms.Padding(0);
             this.customGridLookUpEditNAT.Name = "customGridLookUpEditNAT";
             this.customGridLookUpEditNAT.OnSelectionChangeAction = null;
             this.customGridLookUpEditNAT.PopUpMaxHeight = 300;
             this.customGridLookUpEditNAT.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditNAT.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject3.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject3.Options.UseFont = true;
+            serializableAppearanceObject4.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject4.Options.UseFont = true;
             this.customGridLookUpEditNAT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
             this.customGridLookUpEditNAT.Properties.NullText = "";
             this.customGridLookUpEditNAT.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditNAT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditNAT.Properties.View = this.customGridView4;
             this.customGridLookUpEditNAT.QueryModel = null;
-            this.customGridLookUpEditNAT.Size = new System.Drawing.Size(149, 30);
+            this.customGridLookUpEditNAT.Size = new System.Drawing.Size(148, 30);
             this.customGridLookUpEditNAT.StyleController = this.layoutControl3;
             this.customGridLookUpEditNAT.TabIndex = 9;
             // 
@@ -801,23 +803,23 @@
             this.customGridLookUpEditGender.GridViewWidth = 355;
             this.customGridLookUpEditGender.InPlaceRepositoryPopUp = null;
             this.customGridLookUpEditGender.IsAdditionalModelsOnTop = true;
-            this.customGridLookUpEditGender.Location = new System.Drawing.Point(535, 76);
+            this.customGridLookUpEditGender.Location = new System.Drawing.Point(534, 76);
             this.customGridLookUpEditGender.Margin = new System.Windows.Forms.Padding(0);
             this.customGridLookUpEditGender.Name = "customGridLookUpEditGender";
             this.customGridLookUpEditGender.OnSelectionChangeAction = null;
             this.customGridLookUpEditGender.PopUpMaxHeight = 300;
             this.customGridLookUpEditGender.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditGender.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject4.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject4.Options.UseFont = true;
+            serializableAppearanceObject5.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject5.Options.UseFont = true;
             this.customGridLookUpEditGender.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, "", null, null, true)});
             this.customGridLookUpEditGender.Properties.NullText = "";
             this.customGridLookUpEditGender.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditGender.Properties.View = this.customGridView3;
             this.customGridLookUpEditGender.QueryModel = null;
-            this.customGridLookUpEditGender.Size = new System.Drawing.Size(166, 30);
+            this.customGridLookUpEditGender.Size = new System.Drawing.Size(165, 30);
             this.customGridLookUpEditGender.StyleController = this.layoutControl3;
             this.customGridLookUpEditGender.TabIndex = 8;
             // 
@@ -914,23 +916,23 @@
             this.customGridLookUpEditCIT.GridViewWidth = 355;
             this.customGridLookUpEditCIT.InPlaceRepositoryPopUp = null;
             this.customGridLookUpEditCIT.IsAdditionalModelsOnTop = true;
-            this.customGridLookUpEditCIT.Location = new System.Drawing.Point(1096, 76);
+            this.customGridLookUpEditCIT.Location = new System.Drawing.Point(1093, 76);
             this.customGridLookUpEditCIT.Margin = new System.Windows.Forms.Padding(0);
             this.customGridLookUpEditCIT.Name = "customGridLookUpEditCIT";
             this.customGridLookUpEditCIT.OnSelectionChangeAction = null;
             this.customGridLookUpEditCIT.PopUpMaxHeight = 300;
             this.customGridLookUpEditCIT.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditCIT.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject5.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject5.Options.UseFont = true;
+            serializableAppearanceObject6.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject6.Options.UseFont = true;
             this.customGridLookUpEditCIT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject6, "", null, null, true)});
             this.customGridLookUpEditCIT.Properties.NullText = "";
             this.customGridLookUpEditCIT.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditCIT.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditCIT.Properties.View = this.customGridView1;
             this.customGridLookUpEditCIT.QueryModel = null;
-            this.customGridLookUpEditCIT.Size = new System.Drawing.Size(143, 30);
+            this.customGridLookUpEditCIT.Size = new System.Drawing.Size(142, 30);
             this.customGridLookUpEditCIT.StyleController = this.layoutControl3;
             this.customGridLookUpEditCIT.TabIndex = 7;
             // 
@@ -1021,9 +1023,9 @@
             // 
             // textEditPOB
             // 
-            this.textEditPOB.Location = new System.Drawing.Point(535, 110);
+            this.textEditPOB.Location = new System.Drawing.Point(534, 110);
             this.textEditPOB.Name = "textEditPOB";
-            this.textEditPOB.Size = new System.Drawing.Size(704, 30);
+            this.textEditPOB.Size = new System.Drawing.Size(701, 30);
             this.textEditPOB.StyleController = this.layoutControl3;
             this.textEditPOB.TabIndex = 6;
             // 
@@ -1031,7 +1033,7 @@
             // 
             this.textEditName.Location = new System.Drawing.Point(116, 76);
             this.textEditName.Name = "textEditName";
-            this.textEditName.Size = new System.Drawing.Size(296, 30);
+            this.textEditName.Size = new System.Drawing.Size(295, 30);
             this.textEditName.StyleController = this.layoutControl3;
             this.textEditName.TabIndex = 6;
             // 
@@ -1050,16 +1052,16 @@
             this.customGridLookUpEditCustomer.PopUpMaxHeight = 300;
             this.customGridLookUpEditCustomer.Properties.Appearance.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.customGridLookUpEditCustomer.Properties.Appearance.Options.UseFont = true;
-            serializableAppearanceObject6.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
-            serializableAppearanceObject6.Options.UseFont = true;
+            serializableAppearanceObject7.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
+            serializableAppearanceObject7.Options.UseFont = true;
             this.customGridLookUpEditCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject6, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject7, "", null, null, true)});
             this.customGridLookUpEditCustomer.Properties.NullText = "";
             this.customGridLookUpEditCustomer.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
             this.customGridLookUpEditCustomer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.customGridLookUpEditCustomer.Properties.View = this.customGridView2;
             this.customGridLookUpEditCustomer.QueryModel = null;
-            this.customGridLookUpEditCustomer.Size = new System.Drawing.Size(296, 30);
+            this.customGridLookUpEditCustomer.Size = new System.Drawing.Size(295, 30);
             this.customGridLookUpEditCustomer.StyleController = this.layoutControl3;
             this.customGridLookUpEditCustomer.TabIndex = 4;
             // 
@@ -1187,7 +1189,7 @@
             this.layoutControlGroup1.OptionsItemText.TextToControlDistance = 10;
             this.layoutControlGroup1.OptionsPrint.AppearanceItemCaption.Font = new System.Drawing.Font("Khmer SBBIC Serif", 10F);
             this.layoutControlGroup1.OptionsPrint.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1266, 368);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1262, 365);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItemName
@@ -1197,7 +1199,7 @@
             this.layoutControlItemName.Name = "layoutControlItemName";
             this.layoutControlItemName.OptionsTableLayoutItem.ColumnSpan = 2;
             this.layoutControlItemName.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItemName.Size = new System.Drawing.Size(419, 34);
+            this.layoutControlItemName.Size = new System.Drawing.Size(418, 34);
             this.layoutControlItemName.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemName.Text = "ឈ្មោះ";
             this.layoutControlItemName.TextSize = new System.Drawing.Size(79, 25);
@@ -1210,7 +1212,7 @@
             this.layoutControlItemCustomer.Location = new System.Drawing.Point(0, 20);
             this.layoutControlItemCustomer.Name = "layoutControlItemCustomer";
             this.layoutControlItemCustomer.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItemCustomer.Size = new System.Drawing.Size(419, 34);
+            this.layoutControlItemCustomer.Size = new System.Drawing.Size(418, 34);
             this.layoutControlItemCustomer.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemCustomer.Text = "Customer";
             this.layoutControlItemCustomer.TextSize = new System.Drawing.Size(79, 24);
@@ -1222,16 +1224,16 @@
             this.emptySpaceItem1.MaxSize = new System.Drawing.Size(10, 10);
             this.emptySpaceItem1.MinSize = new System.Drawing.Size(10, 10);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(1246, 10);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1242, 10);
             this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItemCIT
             // 
             this.layoutControlItemCIT.Control = this.customGridLookUpEditCIT;
-            this.layoutControlItemCIT.Location = new System.Drawing.Point(980, 64);
+            this.layoutControlItemCIT.Location = new System.Drawing.Point(977, 64);
             this.layoutControlItemCIT.Name = "layoutControlItemCIT";
-            this.layoutControlItemCIT.Size = new System.Drawing.Size(266, 34);
+            this.layoutControlItemCIT.Size = new System.Drawing.Size(265, 34);
             this.layoutControlItemCIT.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemCIT.Text = "សញ្ជាតិ";
             this.layoutControlItemCIT.TextSize = new System.Drawing.Size(79, 25);
@@ -1239,9 +1241,9 @@
             // layoutControlItemGender
             // 
             this.layoutControlItemGender.Control = this.customGridLookUpEditGender;
-            this.layoutControlItemGender.Location = new System.Drawing.Point(419, 64);
+            this.layoutControlItemGender.Location = new System.Drawing.Point(418, 64);
             this.layoutControlItemGender.Name = "layoutControlItemGender";
-            this.layoutControlItemGender.Size = new System.Drawing.Size(289, 34);
+            this.layoutControlItemGender.Size = new System.Drawing.Size(288, 34);
             this.layoutControlItemGender.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemGender.Text = "ភេទ";
             this.layoutControlItemGender.TextSize = new System.Drawing.Size(79, 25);
@@ -1249,9 +1251,9 @@
             // layoutControlItemNAT
             // 
             this.layoutControlItemNAT.Control = this.customGridLookUpEditNAT;
-            this.layoutControlItemNAT.Location = new System.Drawing.Point(708, 64);
+            this.layoutControlItemNAT.Location = new System.Drawing.Point(706, 64);
             this.layoutControlItemNAT.Name = "layoutControlItemNAT";
-            this.layoutControlItemNAT.Size = new System.Drawing.Size(272, 34);
+            this.layoutControlItemNAT.Size = new System.Drawing.Size(271, 34);
             this.layoutControlItemNAT.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemNAT.Text = "ជនជាតិ";
             this.layoutControlItemNAT.TextSize = new System.Drawing.Size(79, 25);
@@ -1261,7 +1263,7 @@
             this.layoutControlItemDOB.Control = this.dateEditDateTimeDOB;
             this.layoutControlItemDOB.Location = new System.Drawing.Point(0, 98);
             this.layoutControlItemDOB.Name = "layoutControlItemDOB";
-            this.layoutControlItemDOB.Size = new System.Drawing.Size(419, 34);
+            this.layoutControlItemDOB.Size = new System.Drawing.Size(418, 34);
             this.layoutControlItemDOB.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemDOB.Text = "ថ្ងៃ​កំណើត";
             this.layoutControlItemDOB.TextSize = new System.Drawing.Size(79, 25);
@@ -1269,9 +1271,9 @@
             // layoutControlItemPOB
             // 
             this.layoutControlItemPOB.Control = this.textEditPOB;
-            this.layoutControlItemPOB.Location = new System.Drawing.Point(419, 98);
+            this.layoutControlItemPOB.Location = new System.Drawing.Point(418, 98);
             this.layoutControlItemPOB.Name = "layoutControlItemPOB";
-            this.layoutControlItemPOB.Size = new System.Drawing.Size(827, 34);
+            this.layoutControlItemPOB.Size = new System.Drawing.Size(824, 34);
             this.layoutControlItemPOB.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemPOB.Text = "កន្លៃងកំណើត";
             this.layoutControlItemPOB.TextSize = new System.Drawing.Size(79, 25);
@@ -1281,7 +1283,7 @@
             this.layoutControlItemVI.Control = this.textEditVI;
             this.layoutControlItemVI.Location = new System.Drawing.Point(0, 166);
             this.layoutControlItemVI.Name = "layoutControlItemVI";
-            this.layoutControlItemVI.Size = new System.Drawing.Size(325, 34);
+            this.layoutControlItemVI.Size = new System.Drawing.Size(324, 34);
             this.layoutControlItemVI.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemVI.Text = "ភូមិ";
             this.layoutControlItemVI.TextSize = new System.Drawing.Size(79, 25);
@@ -1289,9 +1291,9 @@
             // layoutControlItemDIS
             // 
             this.layoutControlItemDIS.Control = this.textEditDIS;
-            this.layoutControlItemDIS.Location = new System.Drawing.Point(632, 166);
+            this.layoutControlItemDIS.Location = new System.Drawing.Point(630, 166);
             this.layoutControlItemDIS.Name = "layoutControlItemDIS";
-            this.layoutControlItemDIS.Size = new System.Drawing.Size(304, 34);
+            this.layoutControlItemDIS.Size = new System.Drawing.Size(303, 34);
             this.layoutControlItemDIS.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemDIS.Text = "ស្រុក/ខ័ណ្ឌ";
             this.layoutControlItemDIS.TextSize = new System.Drawing.Size(79, 25);
@@ -1299,9 +1301,9 @@
             // layoutControlItemPRO
             // 
             this.layoutControlItemPRO.Control = this.textEditPRO;
-            this.layoutControlItemPRO.Location = new System.Drawing.Point(936, 166);
+            this.layoutControlItemPRO.Location = new System.Drawing.Point(933, 166);
             this.layoutControlItemPRO.Name = "layoutControlItemPRO";
-            this.layoutControlItemPRO.Size = new System.Drawing.Size(310, 34);
+            this.layoutControlItemPRO.Size = new System.Drawing.Size(309, 34);
             this.layoutControlItemPRO.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemPRO.Text = "ខេត្ត/ក្រុង";
             this.layoutControlItemPRO.TextSize = new System.Drawing.Size(79, 25);
@@ -1309,9 +1311,9 @@
             // layoutControlItemCOM
             // 
             this.layoutControlItemCOM.Control = this.textEditCOM;
-            this.layoutControlItemCOM.Location = new System.Drawing.Point(325, 166);
+            this.layoutControlItemCOM.Location = new System.Drawing.Point(324, 166);
             this.layoutControlItemCOM.Name = "layoutControlItemCOM";
-            this.layoutControlItemCOM.Size = new System.Drawing.Size(307, 34);
+            this.layoutControlItemCOM.Size = new System.Drawing.Size(306, 34);
             this.layoutControlItemCOM.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemCOM.Text = "ឃុំ/សង្កាត់";
             this.layoutControlItemCOM.TextSize = new System.Drawing.Size(79, 25);
@@ -1321,7 +1323,7 @@
             this.layoutControlItemAddress.Control = this.textEditAddress;
             this.layoutControlItemAddress.Location = new System.Drawing.Point(0, 132);
             this.layoutControlItemAddress.Name = "layoutControlItemAddress";
-            this.layoutControlItemAddress.Size = new System.Drawing.Size(1246, 34);
+            this.layoutControlItemAddress.Size = new System.Drawing.Size(1242, 34);
             this.layoutControlItemAddress.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemAddress.Text = "អាស័យដ្ឋាន";
             this.layoutControlItemAddress.TextSize = new System.Drawing.Size(79, 25);
@@ -1331,7 +1333,7 @@
             this.layoutControlItemAmount.Control = this.textEditAmount;
             this.layoutControlItemAmount.Location = new System.Drawing.Point(0, 264);
             this.layoutControlItemAmount.Name = "layoutControlItemAmount";
-            this.layoutControlItemAmount.Size = new System.Drawing.Size(419, 34);
+            this.layoutControlItemAmount.Size = new System.Drawing.Size(418, 34);
             this.layoutControlItemAmount.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemAmount.Text = "Amount";
             this.layoutControlItemAmount.TextSize = new System.Drawing.Size(79, 24);
@@ -1339,9 +1341,9 @@
             // layoutControlItemPeriod
             // 
             this.layoutControlItemPeriod.Control = this.textEditPeriod;
-            this.layoutControlItemPeriod.Location = new System.Drawing.Point(419, 264);
+            this.layoutControlItemPeriod.Location = new System.Drawing.Point(418, 264);
             this.layoutControlItemPeriod.Name = "layoutControlItemPeriod";
-            this.layoutControlItemPeriod.Size = new System.Drawing.Size(416, 34);
+            this.layoutControlItemPeriod.Size = new System.Drawing.Size(414, 34);
             this.layoutControlItemPeriod.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 0, 0, 0);
             this.layoutControlItemPeriod.Text = "រយៈពេល";
             this.layoutControlItemPeriod.TextSize = new System.Drawing.Size(79, 25);
@@ -1351,7 +1353,7 @@
             this.layoutControlItemRate.Control = this.textEditRate;
             this.layoutControlItemRate.Location = new System.Drawing.Point(0, 298);
             this.layoutControlItemRate.Name = "layoutControlItemRate";
-            this.layoutControlItemRate.Size = new System.Drawing.Size(419, 34);
+            this.layoutControlItemRate.Size = new System.Drawing.Size(418, 34);
             this.layoutControlItemRate.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemRate.Text = "ការប្រាក់";
             this.layoutControlItemRate.TextSize = new System.Drawing.Size(79, 25);
@@ -1359,18 +1361,18 @@
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(419, 20);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(418, 20);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(827, 34);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(824, 34);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem5
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.CustomizationFormText = "emptySpaceItem3";
-            this.emptySpaceItem5.Location = new System.Drawing.Point(419, 220);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(418, 220);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(827, 34);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(824, 34);
             this.emptySpaceItem5.Text = "emptySpaceItem3";
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -1381,7 +1383,7 @@
             this.layoutControlItemLoan.Control = this.customGridLookUpEditLoan;
             this.layoutControlItemLoan.Location = new System.Drawing.Point(0, 220);
             this.layoutControlItemLoan.Name = "layoutControlItemLoan";
-            this.layoutControlItemLoan.Size = new System.Drawing.Size(419, 34);
+            this.layoutControlItemLoan.Size = new System.Drawing.Size(418, 34);
             this.layoutControlItemLoan.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemLoan.Text = "Loan";
             this.layoutControlItemLoan.TextSize = new System.Drawing.Size(79, 24);
@@ -1393,7 +1395,7 @@
             this.emptySpaceItem2.MaxSize = new System.Drawing.Size(20, 20);
             this.emptySpaceItem2.MinSize = new System.Drawing.Size(20, 20);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(1246, 20);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(1242, 20);
             this.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -1404,7 +1406,7 @@
             this.emptySpaceItem6.MaxSize = new System.Drawing.Size(10, 10);
             this.emptySpaceItem6.MinSize = new System.Drawing.Size(10, 10);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(1246, 10);
+            this.emptySpaceItem6.Size = new System.Drawing.Size(1242, 10);
             this.emptySpaceItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -1413,7 +1415,7 @@
             this.emptySpaceItem7.AllowHotTrack = false;
             this.emptySpaceItem7.Location = new System.Drawing.Point(0, 332);
             this.emptySpaceItem7.Name = "emptySpaceItem7";
-            this.emptySpaceItem7.Size = new System.Drawing.Size(1246, 16);
+            this.emptySpaceItem7.Size = new System.Drawing.Size(1242, 13);
             this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem8
@@ -1423,16 +1425,16 @@
             this.emptySpaceItem8.MaxSize = new System.Drawing.Size(10, 20);
             this.emptySpaceItem8.MinSize = new System.Drawing.Size(10, 20);
             this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(1246, 20);
+            this.emptySpaceItem8.Size = new System.Drawing.Size(1242, 20);
             this.emptySpaceItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.customGridLookUpEditPeriodType;
-            this.layoutControlItem1.Location = new System.Drawing.Point(835, 264);
+            this.layoutControlItem1.Location = new System.Drawing.Point(832, 264);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(411, 34);
+            this.layoutControlItem1.Size = new System.Drawing.Size(410, 34);
             this.layoutControlItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 15, 0, 0);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -1440,9 +1442,9 @@
             // layoutControlItemPayType
             // 
             this.layoutControlItemPayType.Control = this.customGridLookUpEditPayType;
-            this.layoutControlItemPayType.Location = new System.Drawing.Point(419, 298);
+            this.layoutControlItemPayType.Location = new System.Drawing.Point(418, 298);
             this.layoutControlItemPayType.Name = "layoutControlItemPayType";
-            this.layoutControlItemPayType.Size = new System.Drawing.Size(827, 34);
+            this.layoutControlItemPayType.Size = new System.Drawing.Size(824, 34);
             this.layoutControlItemPayType.Spacing = new DevExpress.XtraLayout.Utils.Padding(15, 15, 0, 0);
             this.layoutControlItemPayType.Text = "ការសង";
             this.layoutControlItemPayType.TextSize = new System.Drawing.Size(79, 25);
@@ -1451,7 +1453,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.layoutControl4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(739, 212);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1266, 368);
             this.xtraTabPage2.Text = "កាលវិភាគទទួល";
             // 
             // layoutControl4
@@ -1462,7 +1464,7 @@
             this.layoutControl4.Name = "layoutControl4";
             this.layoutControl4.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(514, 222, 250, 350);
             this.layoutControl4.Root = this.layoutControlGroup2;
-            this.layoutControl4.Size = new System.Drawing.Size(739, 212);
+            this.layoutControl4.Size = new System.Drawing.Size(1266, 368);
             this.layoutControl4.TabIndex = 9;
             this.layoutControl4.Text = "layoutControl4";
             // 
@@ -1471,7 +1473,7 @@
             this.gridControl.Location = new System.Drawing.Point(12, 12);
             this.gridControl.MainView = this.gridView;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(715, 188);
+            this.gridControl.Size = new System.Drawing.Size(1242, 344);
             this.gridControl.TabIndex = 9;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
@@ -1627,7 +1629,7 @@
             this.layoutControlItem16});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(739, 212);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1266, 368);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem16
@@ -1635,7 +1637,7 @@
             this.layoutControlItem16.Control = this.gridControl;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(719, 192);
+            this.layoutControlItem16.Size = new System.Drawing.Size(1246, 348);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
             // 
@@ -1755,15 +1757,15 @@
         private DevExpress.XtraTab.XtraTabControl xtraTabControlInfo;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditNAT;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView4;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditGender;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView3;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditCIT;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView1;
+        private CustomGridLookUpEdit customGridLookUpEditNAT;
+        private CustomGridView customGridView4;
+        private CustomGridLookUpEdit customGridLookUpEditGender;
+        private CustomGridView customGridView3;
+        private CustomGridLookUpEdit customGridLookUpEditCIT;
+        private CustomGridView customGridView1;
         private DevExpress.XtraEditors.TextEdit textEditName;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditCustomer;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView2;
+        private CustomGridLookUpEdit customGridLookUpEditCustomer;
+        private CustomGridView customGridView2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemName;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemCustomer;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemGender;
@@ -1798,8 +1800,8 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemLoan;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView5;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditLoan;
+        private CustomGridView customGridView5;
+        private CustomGridLookUpEdit customGridLookUpEditLoan;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem7;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
@@ -1814,11 +1816,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn Balance;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditPeriodType;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView6;
+        private CustomGridLookUpEdit customGridLookUpEditPeriodType;
+        private CustomGridView customGridView6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridLookUpEdit customGridLookUpEditPayType;
-        private GridLookUpEdit_MultiAutoSearch.CustomGridView customGridView7;
+        private CustomGridLookUpEdit customGridLookUpEditPayType;
+        private CustomGridView customGridView7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemPayType;
         private DevExpress.XtraGrid.Columns.GridColumn DDA;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;

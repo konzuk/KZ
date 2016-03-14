@@ -3,19 +3,20 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.IO;
 using System.Linq;
+using Entity.Tables.Accounting.Account;
+using Entity.Tables.Accounting.Journal;
+using Entity.Tables.Accounting.Journal.JournalType;
+using Entity.Tables.Master.Common;
+using Entity.Tables.Master.Contact;
+using Entity.Tables.Master.Contact.Company;
+using Entity.Tables.Master.Contact.Customer;
+using Entity.Tables.Master.Contact.Employee;
+using Entity.Tables.Master.Contact.Store;
+using Entity.Tables.Master.Contact.Supplier;
+using Entity.Tables.Master.Location;
+using Entity.Tables.Master.User;
 using Framework.Interfaces.Helper;
 using LoanProject.Migrations;
-using Main.Tables.Accounting.Account;
-using Main.Tables.Accounting.Journal;
-using Main.Tables.Master.Common;
-using Main.Tables.Master.Contact;
-using Main.Tables.Master.Contact.Company;
-using Main.Tables.Master.Contact.Customer;
-using Main.Tables.Master.Contact.Employee;
-using Main.Tables.Master.Contact.Store;
-using Main.Tables.Master.Contact.Supplier;
-using Main.Tables.Master.Location;
-using Main.Tables.Master.User;
 
 namespace LoanProject
 {

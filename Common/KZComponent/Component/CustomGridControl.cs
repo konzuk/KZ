@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DevExpress.XtraGrid.Columns;
-using DevExpress.Data.Filtering.Helpers;
+﻿using System.Collections.Generic;
 using DevExpress.Data.Filtering;
-using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraGrid.Registrator;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.Drawing;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
-using DevExpress.XtraGrid.Views.Base;
-using DevExpress.XtraGrid.Registrator;
 
-namespace GridLookUpEdit_MultiAutoSearch
+namespace KZComponent.Component
 {
     public sealed class CustomGridView : GridView
     {

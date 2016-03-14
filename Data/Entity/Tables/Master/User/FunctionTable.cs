@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace Main.Tables.Master.User
+namespace Entity.Tables.Master.User
 {
     public class FunctionTable : TableMasterObjectBase
     {
