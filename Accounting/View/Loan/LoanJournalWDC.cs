@@ -103,6 +103,12 @@ namespace AccountingView.Loan
 
         private void AddLoan()
         {
+            var addLoan = KZHelper.Container.Resolve<IAddEditLoadJournalWDC>();
+            addLoan.OwnerView = this;
+
+            var flyout = new KZFlyoutDialog(KZHelper.Container, ParentForm, addLoan as Control);
+            flyout.ShowDialog(ParentForm);
+
             //this.flyoutPanel1.HidePopup();
         }
         private void UpdateLoan()

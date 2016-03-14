@@ -1,4 +1,6 @@
-﻿using Microsoft.Practices.Unity;
+﻿using AccountingInfrastructure.View.Journal.Loan;
+using AccountingView.Loan;
+using Microsoft.Practices.Unity;
 
 namespace AccountingView
 {

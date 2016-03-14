@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using AccountingInfrastructure.Model.Journal.Loan;
+using AccountingInfrastructure.View.Journal.Loan;
 using DevExpress.Data.Helpers;
 using DevExpress.Utils.MVVM;
 using DevExpress.XtraEditors;
@@ -9,7 +10,7 @@ using Microsoft.Practices.Unity;
 
 namespace AccountingView.Loan
 {
-    public partial class AddEditLoadJournalWDC : DialogView
+    public partial class AddEditLoadJournalWDC : DialogView , IAddEditLoadJournalWDC
     {
         public AddEditLoadJournalWDC(IUnityContainer container): base(container)
         {
@@ -64,15 +65,15 @@ namespace AccountingView.Loan
         {
             LoanJournalWDCModel = KZHelper.Container.Resolve<ILoanJournalWDCModel>();
 
-            this.BindCustomer();
+            //this.BindCustomer();
 
             var bindManager = base.GetModelBindingManager(LoanJournalWDCModel);
-
-           
-            bindManager.SetBinding(textEditAmount, e => e.EditValue, x => x.Amount);
-            AssignValidationControl(textEditAmount, LoanJournalWDCModel.AmountValidation);
+            
             
 
+            bindManager.SetBinding(textEditAmount, e => e.Text, x => x.Amount);
+
+            AssignValidationControl(textEditAmount, LoanJournalWDCModel.AmountValidation);
         }
 
        
