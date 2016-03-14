@@ -64,32 +64,32 @@ namespace Framework.Base.App
             var tileNavItem1 = new TileNavCategory();
 
 
-            KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.Appearance, KZHelper.KZFonts.ContentFont,
+            KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.Appearance, KZHelper.KZFonts.ContentBoldFont,
                 KZHelper.KZColours.TileColour.ActiveColour,
                 KZHelper.KZColours.TileForeColour.ActiveColour);
 
-            KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceHover, KZHelper.KZFonts.ContentFont,
+            KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceHover, KZHelper.KZFonts.ContentBoldFont,
                 KZHelper.KZColours.TileColour.HoverColour,
                 KZHelper.KZColours.TileForeColour.HoverColour);
 
-            KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceSelected, KZHelper.KZFonts.ContentFont,
+            KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceSelected, KZHelper.KZFonts.ContentBoldFont,
                 KZHelper.KZColours.TileColour.SelectColour, KZHelper.KZColours.TileForeColour.SelectColour);
 
 
             KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceItem.Normal,
-                KZHelper.KZFonts.ContentFont, KZHelper.KZColours.TileColour.ActiveColour,
+                KZHelper.KZFonts.ContentBoldFont, KZHelper.KZColours.TileColour.ActiveColour,
                 KZHelper.KZColours.TileForeColour.ActiveColour);
 
             KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceItem.Hovered,
-                KZHelper.KZFonts.ContentFont, KZHelper.KZColours.TileColour.HoverColour,
+                KZHelper.KZFonts.ContentBoldFont, KZHelper.KZColours.TileColour.HoverColour,
                 KZHelper.KZColours.TileForeColour.HoverColour);
 
             KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceItem.Pressed,
-                KZHelper.KZFonts.ContentFont,
+                KZHelper.KZFonts.ContentBoldFont,
                 KZHelper.KZColours.TileColour.SelectColour, KZHelper.KZColours.TileForeColour.SelectColour);
 
             KZHelper.KZAppearanceSetter.SetAppearance(tileNavItem1.Tile.AppearanceItem.Selected,
-                KZHelper.KZFonts.ContentFont,
+                KZHelper.KZFonts.ContentBoldFont,
                 KZHelper.KZColours.TileColour.SelectColour, KZHelper.KZColours.TileForeColour.SelectColour);
 
 

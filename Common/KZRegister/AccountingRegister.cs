@@ -1,12 +1,12 @@
-﻿using MainController.Contact;
-using MainInfrastructure.Controller;
-using MainInfrastructure.Model.Contact;
-using MainModel.Contact;
+﻿using AccountingInfrastructure.Model.Journal.Loan;
+using AccountingInfrastructure.View.Journal.Loan;
+using AccountingModel;
+using AccountingView.Loan;
 using Microsoft.Practices.Unity;
 
 namespace KZRegister
 {
-    public static class MainRegister
+    public static class AccountingRegister
     {
         public static void Register(IUnityContainer container)
         {
@@ -18,16 +18,15 @@ namespace KZRegister
 
         private static void RegisterController(IUnityContainer container)
         {
-            container.RegisterType<IContactController, ContactController>();
         }
         private static void RegisterView(IUnityContainer container)
         {
-
+            container.RegisterType<IAddEditLoadJournalWDC, AddEditLoadJournalWDC>();
         }
         private static void RegisterModel(IUnityContainer container)
         {
+            container.RegisterType<ILoanJournalWDCModel, LoanJournalWDCModel>();
 
-            container.RegisterType<IContactModel, ContactModel>();
         }
     }
 }

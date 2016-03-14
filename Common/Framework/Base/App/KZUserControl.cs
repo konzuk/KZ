@@ -47,7 +47,7 @@ namespace Framework.Base.App
                 {
                     var message = func.Invoke();
 
-                    if (message.IsSuccess)
+                    if (!message.IsSuccess)
                     {
                         ErrorProvider.SetError(sender as Control, message.Message, errorType);
                         ErrorProvider.SetIconAlignment(control, iconAlignment);

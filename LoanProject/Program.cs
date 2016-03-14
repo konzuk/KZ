@@ -3,9 +3,11 @@ using System.Data.Entity.Infrastructure;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
+using DevExpress.Skins;
 using Framework;
 using Framework.Interfaces.App;
 using Framework.Interfaces.Helper;
+using KZRegister;
 using Microsoft.Practices.Unity;
 
 namespace LoanProject
@@ -29,10 +31,13 @@ namespace LoanProject
             IUnityContainer container = new UnityContainer();
 
             container.RegisterType<IObjectContext, DatabaseContext>();
+            
+          
 
 
             FrameworkRegister.Register(container);
             MainRegister.Register(container);
+            AccountingRegister.Register(container);
             ApplicatonsRegister.Register(container);
 
 
