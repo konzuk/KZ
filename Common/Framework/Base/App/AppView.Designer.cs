@@ -60,7 +60,7 @@ namespace Framework.Base.App
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.EnableBonusSkins = true;
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Silver";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
             // AppView
             // 
