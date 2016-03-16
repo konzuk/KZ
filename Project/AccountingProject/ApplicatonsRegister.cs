@@ -1,9 +1,10 @@
 ﻿using AccountingView.Loan;
 using Framework.Interfaces.Helper;
 using Framework.Interfaces.View;
+using MainView.Position;
 using Microsoft.Practices.Unity;
 
-namespace LoanProject
+namespace AccountingProject
 {
     public static class ApplicatonsRegister
     {

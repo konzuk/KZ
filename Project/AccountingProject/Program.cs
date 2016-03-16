@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
+using AccountingProject;
 using DevExpress.Skins;
 using Framework;
 using Framework.Interfaces.App;
