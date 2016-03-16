@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Data\Reposito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KZRegister", "Common\KZRegister\KZRegister.csproj", "{291F9749-C23B-4D5F-A6C0-73D41956A02A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingProject", "Project\AccountingProject\AccountingProject.csproj", "{7FE5AF0E-705F-4641-8DA4-14C0F9994341}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,10 @@ Global
 		{291F9749-C23B-4D5F-A6C0-73D41956A02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291F9749-C23B-4D5F-A6C0-73D41956A02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291F9749-C23B-4D5F-A6C0-73D41956A02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE5AF0E-705F-4641-8DA4-14C0F9994341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE5AF0E-705F-4641-8DA4-14C0F9994341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE5AF0E-705F-4641-8DA4-14C0F9994341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE5AF0E-705F-4641-8DA4-14C0F9994341}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,5 +142,6 @@ Global
 		{48741DD5-C66B-4CFC-972C-D5E5BE1B1C2E} = {8B89AC8F-69ED-4CBF-A931-11077F6FF3EE}
 		{E5023806-5A02-4131-84F6-D202DD3E56F3} = {EC2BFDEF-AB97-4055-8185-7F5CE1F260D6}
 		{291F9749-C23B-4D5F-A6C0-73D41956A02A} = {8B89AC8F-69ED-4CBF-A931-11077F6FF3EE}
+		{7FE5AF0E-705F-4641-8DA4-14C0F9994341} = {4A16A4BC-70CE-4F28-812F-296A2CCA9122}
 	EndGlobalSection
 EndGlobal
