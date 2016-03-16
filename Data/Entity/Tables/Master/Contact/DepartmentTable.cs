@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Master.Contact.Company;
-using Main.Tables.Master.Contact.Employee;
+using Entity.Tables.Master.Contact.Company;
+using Entity.Tables.Master.Contact.Employee;
 
-namespace Main.Tables.Master.Contact
+namespace Entity.Tables.Master.Contact
 {
     public class DepartmentTable : TableMasterObjectBase
     {

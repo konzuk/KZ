@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Main.Tables.Accounting.Account
+namespace Entity.Tables.Accounting.Account
 {
     public class AccountCategoryTable : TableMasterObjectBase
     {

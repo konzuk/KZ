@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace Main.Tables.Master.Contact
+namespace Entity.Tables.Master.Contact
 {
     public class CitizenshipTable : TableMasterObjectBase
     {

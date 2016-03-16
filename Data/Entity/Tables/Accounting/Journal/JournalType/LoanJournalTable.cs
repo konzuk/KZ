@@ -1,9 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Accounting.Account;
-
-namespace Main.Tables.Accounting.Journal
+﻿namespace Entity.Tables.Accounting.Journal.JournalType
 {
     public class LoanJournalTable : JournalTable
     {

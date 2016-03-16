@@ -1,8 +1,7 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Master.Location;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Entity.Tables.Master.Location;
 
-namespace Main.Tables.Accounting.Journal
+namespace Entity.Tables.Accounting.Journal
 {
     public class JournalItemMovementMovementTable : JournalItemTable
     {

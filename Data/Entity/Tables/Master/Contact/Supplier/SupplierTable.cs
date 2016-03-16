@@ -1,4 +1,4 @@
-﻿namespace Main.Tables.Master.Contact.Supplier
+﻿namespace Entity.Tables.Master.Contact.Supplier
 {
     public class SupplierTable : ContactTable
     {

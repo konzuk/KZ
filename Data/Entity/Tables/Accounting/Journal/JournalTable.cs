@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection;
-using Main.Tables.Master.Common;
-using Main.Tables.Master.Contact;
-using Main.Tables.Master.Location;
-using Main.Tables.Master.User;
+using Entity.Tables.Master.User;
 
-namespace Main.Tables.Accounting.Journal
+namespace Entity.Tables.Accounting.Journal
 {
     public class JournalTable : TableBase
     {

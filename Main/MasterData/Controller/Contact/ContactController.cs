@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
+using Entity.Tables.Master.Contact;
 using Framework.Base.App;
 using Framework.Base.Controller;
 using Framework.Base.Helper;
 using Framework.Interfaces.Helper;
-using Main.Tables.Master.Contact;
 using MainInfrastructure.Controller;
 using MainInfrastructure.Model.Contact;
 using Microsoft.Practices.Unity;

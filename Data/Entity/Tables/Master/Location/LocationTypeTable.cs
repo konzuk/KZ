@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace Main.Tables.Master.Location
+namespace Entity.Tables.Master.Location
 {
     public class LocationTypeTable : TableMasterObjectBase
     {

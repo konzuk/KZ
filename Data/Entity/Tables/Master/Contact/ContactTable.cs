@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Accounting.Journal;
-using Main.Tables.Master.Location;
+using Entity.Tables.Accounting.Journal;
+using Entity.Tables.Master.Location;
 
-namespace Main.Tables.Master.Contact
+namespace Entity.Tables.Master.Contact
 {
     public class ContactTable : TableMasterObjectBase
     {

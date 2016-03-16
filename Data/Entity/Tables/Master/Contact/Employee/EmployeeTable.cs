@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Master.User;
+using Entity.Tables.Master.User;
 
-namespace Main.Tables.Master.Contact.Employee
+namespace Entity.Tables.Master.Contact.Employee
 {
     public class EmployeeTable : ContactTable
     {

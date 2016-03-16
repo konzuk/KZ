@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
-using Main.Tables.Accounting.Account;
-using Main.Tables.Master.Common;
-using Main.Tables.Master.Contact;
-using Main.Tables.Master.Contact.Employee;
-using Main.Tables.Master.Item;
-using Main.Tables.Master.Location;
-using Main.Tables.Master.User;
+using Entity.Tables.Accounting.Account;
+using Entity.Tables.Master.Common;
+using Entity.Tables.Master.Contact;
+using Entity.Tables.Master.Contact.Employee;
+using Entity.Tables.Master.Item;
+using Entity.Tables.Master.Location;
+using Entity.Tables.Master.User;
 using Repository;
 
 namespace LoanProject.Migrations

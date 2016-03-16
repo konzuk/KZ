@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Main.Tables.Master.Contact
+namespace Entity.Tables.Master.Contact
 {
     public class ContactMemberTypeTable : TableMasterObjectBase
     {

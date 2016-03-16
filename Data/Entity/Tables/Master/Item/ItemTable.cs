@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Accounting.Account;
-using Main.Tables.Accounting.Journal;
+using Entity.Tables.Accounting.Account;
+using Entity.Tables.Accounting.Journal;
 
-namespace Main.Tables.Master.Item
+namespace Entity.Tables.Master.Item
 {
     public class ItemTable : TableMasterObjectBase
     {

@@ -1,10 +1,7 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration.Conventions;
-using Main.Tables.Accounting.Journal;
 
-namespace Main.Tables.Master.Common
+namespace Entity.Tables.Master.Common
 {
     public class ExchangeRateTable : TableBase
     {

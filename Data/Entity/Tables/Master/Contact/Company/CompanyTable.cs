@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Master.Common;
+using Entity.Tables.Master.Common;
 
-namespace Main.Tables.Master.Contact.Company
+namespace Entity.Tables.Master.Contact.Company
 {
     public class CompanyTable : ContactTable
     {

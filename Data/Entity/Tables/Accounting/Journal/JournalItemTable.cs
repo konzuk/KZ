@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Master.Common;
-using Main.Tables.Master.Contact;
-using Main.Tables.Master.Item;
-using Main.Tables.Master.Location;
+using Entity.Tables.Master.Common;
+using Entity.Tables.Master.Contact;
+using Entity.Tables.Master.Item;
 
-namespace Main.Tables.Accounting.Journal
+namespace Entity.Tables.Accounting.Journal
 {
     public class JournalItemTable :TableBase
     {

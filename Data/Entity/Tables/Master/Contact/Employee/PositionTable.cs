@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace Main.Tables.Master.Contact.Employee
+namespace Entity.Tables.Master.Contact.Employee
 {
     public class PositionTable : TableMasterObjectBase
     {

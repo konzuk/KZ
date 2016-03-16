@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace Main.Tables.Accounting.Journal
+namespace Entity.Tables.Accounting.Journal
 {
     public class TransactionTypeTable: TableMasterObjectBase
     {

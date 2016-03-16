@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Main.Tables.Master.Contact.Customer
+namespace Entity.Tables.Master.Contact.Customer
 {
     public class DetailCustomer : ContactTable
     {

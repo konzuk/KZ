@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using Main.Tables.Accounting.Journal;
-using Main.Tables.Master.Contact.Company;
+using Entity.Tables.Accounting.Journal;
+using Entity.Tables.Master.Contact.Company;
 
-namespace Main.Tables.Master.Common
+namespace Entity.Tables.Master.Common
 {
     public class CurrencyTable : TableMasterObjectBase
     {

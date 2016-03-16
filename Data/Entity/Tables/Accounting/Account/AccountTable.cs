@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Main.Tables.Accounting.Journal;
-using Main.Tables.Master.Item;
+using Entity.Tables.Accounting.Journal;
+using Entity.Tables.Master.Item;
 
-namespace Main.Tables.Accounting.Account
+namespace Entity.Tables.Accounting.Account
 {
     public class AccountTable : TableMasterObjectBase
     {

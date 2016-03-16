@@ -1,4 +1,4 @@
-﻿namespace Main.Tables.Master.Contact.Store
+﻿namespace Entity.Tables.Master.Contact.Store
 {
     public class StoreTable : ContactTable
     {
