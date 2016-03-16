@@ -70,6 +70,18 @@
     <Reference Include="KZSkinOffice">
       <HintPath>..\..\Lib\Framework\KZSkinOffice.dll</HintPath>
     </Reference>
+    <Reference Include="MainController">
+      <HintPath>..\..\Lib\Main\MainController.dll</HintPath>
+    </Reference>
+    <Reference Include="MainInfrastructure">
+      <HintPath>..\..\Lib\Main\MainInfrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MainModel">
+      <HintPath>..\..\Lib\Main\MainModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MainView">
+      <HintPath>..\..\Lib\Main\MainView.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Prism">
       <HintPath>..\..\Lib\Framework\Prism4.0\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>

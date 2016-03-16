@@ -11,7 +11,7 @@ namespace LoanProject
         {
             var apps = container.Resolve<IApps>();
 
-            container.RegisterType<IContentView, LoanJournalWDC>(apps.LoanJournalWDC.Code);
+            container.RegisterType<IContentView, PositionContent>(apps.LoanJournalWDC.Code);
         }
     }
 }
