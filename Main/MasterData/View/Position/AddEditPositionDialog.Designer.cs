@@ -1,6 +1,6 @@
 ﻿using KZComponent.Component;
 
-namespace AccountingView.Loan
+namespace MainView.Position
 {
     partial class AddEditPositionDialog
     {

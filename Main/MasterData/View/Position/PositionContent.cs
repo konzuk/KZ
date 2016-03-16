@@ -1,16 +1,10 @@
-﻿using System.Resources;
-using System.Threading;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
+﻿using System.Windows.Forms;
 using Framework.Base.App;
-using Framework.Base.Model;
 using Framework.Base.View;
 using Framework.Interfaces.Helper;
-using Framework.Interfaces.Model;
-using Microsoft.Practices.ObjectBuilder2;
 using Microsoft.Practices.Unity;
 
-namespace AccountingView.Loan
+namespace MainView.Position
 {
     public partial class PositionContent : ContentView
     {

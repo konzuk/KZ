@@ -1,11 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
-using DevExpress.Utils.MVVM;
-using DevExpress.XtraEditors;
-using Framework.Base.View;
+﻿using Framework.Base.View;
 using Microsoft.Practices.Unity;
 
-namespace AccountingView.Loan
+namespace MainView.Position
 {
     public partial class AddEditPositionDialog : DialogView
     {
