@@ -30147,4 +30147,7 @@
   <data name="PayType" xml:space="preserve">
     <value>ការសង</value>
   </data>
+  <data name="CreateNew" xml:space="preserve">
+    <value>បង្កើតថ្មី</value>
+  </data>
 </root>

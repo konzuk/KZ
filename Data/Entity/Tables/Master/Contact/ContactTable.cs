@@ -7,9 +7,6 @@ namespace Entity.Tables.Master.Contact
 {
     public class ContactTable : TableMasterObjectBase
     {
-        
-
-
         //Field
         public string ContactNumber { get; set; }
         public string Email { get; set; }

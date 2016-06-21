@@ -62,7 +62,7 @@
     <Compile Include="Tables\Accounting\Journal\JournalTable.cs" />
     <Compile Include="Tables\Accounting\Journal\JournalType\LoanJournalTable.cs" />
     <Compile Include="Tables\Accounting\Journal\TransactionTypeTable.cs" />
-    <Compile Include="Tables\Master\Contact\Customer\DetailCustomer.cs" />
+    <Compile Include="Tables\Master\Contact\Customer\DetailCustomerTable.cs" />
     <Compile Include="Tables\Master\Contact\CitizenshipTable.cs" />
     <Compile Include="Tables\Master\Item\InventoryConditionTable.cs" />
     <Compile Include="Tables\Master\Item\ItemCategoryTable.cs" />

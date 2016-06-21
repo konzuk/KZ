@@ -1453,7 +1453,7 @@ namespace AccountingView.Loan
             // 
             this.xtraTabPage2.Controls.Add(this.layoutControl4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1266, 368);
+            this.xtraTabPage2.Size = new System.Drawing.Size(739, 212);
             this.xtraTabPage2.Text = "កាលវិភាគទទួល";
             // 
             // layoutControl4
@@ -1464,7 +1464,7 @@ namespace AccountingView.Loan
             this.layoutControl4.Name = "layoutControl4";
             this.layoutControl4.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(514, 222, 250, 350);
             this.layoutControl4.Root = this.layoutControlGroup2;
-            this.layoutControl4.Size = new System.Drawing.Size(1266, 368);
+            this.layoutControl4.Size = new System.Drawing.Size(739, 212);
             this.layoutControl4.TabIndex = 9;
             this.layoutControl4.Text = "layoutControl4";
             // 
@@ -1473,7 +1473,7 @@ namespace AccountingView.Loan
             this.gridControl.Location = new System.Drawing.Point(12, 12);
             this.gridControl.MainView = this.gridView;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(1242, 344);
+            this.gridControl.Size = new System.Drawing.Size(715, 188);
             this.gridControl.TabIndex = 9;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView});
@@ -1629,7 +1629,7 @@ namespace AccountingView.Loan
             this.layoutControlItem16});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1266, 368);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(739, 212);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem16
@@ -1637,7 +1637,7 @@ namespace AccountingView.Loan
             this.layoutControlItem16.Control = this.gridControl;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(1246, 348);
+            this.layoutControlItem16.Size = new System.Drawing.Size(719, 192);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
             // 

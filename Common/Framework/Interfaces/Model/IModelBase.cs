@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using Framework.Interfaces.Helper;
 
 namespace Framework.Interfaces.Model

@@ -19645,6 +19645,15 @@ namespace Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to បង្កើតថ្មី.
+        /// </summary>
+        public static string CreateNew {
+            get {
+                return ResourceManager.GetString("CreateNew", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to បង្កើត.
         /// </summary>
         public static string Creates {

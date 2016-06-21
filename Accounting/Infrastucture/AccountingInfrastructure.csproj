@@ -33,6 +33,9 @@
     <Reference Include="Framework">
       <HintPath>..\..\Lib\Framework\Framework.dll</HintPath>
     </Reference>
+    <Reference Include="MainInfrastructure">
+      <HintPath>..\..\Lib\Main\MainInfrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="Resource">
       <HintPath>..\..\Lib\Framework\Resource.dll</HintPath>
     </Reference>

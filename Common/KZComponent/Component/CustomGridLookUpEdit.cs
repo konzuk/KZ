@@ -176,26 +176,33 @@ namespace KZComponent.Component
 
 
             var model = defaultValueModel;
-            int selectedValue = 0;
+            IModelBase selectedModel = null;
+
             if (model != null && model.Id != 0)
             {
-                selectedValue = model.Id;
+                if (models != null)
+                {
+                    selectedModel = (IModelBase) models.FirstOrDefault(s =>
+                    {
+                        var modelBase = s as IModelBase;
+                        return modelBase != null && modelBase.Id == model.Id;
+                    });
+                }
             }
             else 
             {
                 if (models != null)
                 {
-                    IModelBase selectedModel = null;
-
-
                     foreach (var contactModel in models)
                     {
                         selectedModel = contactModel as IModelBase;
                         break;
                     }
-                    if (selectedModel != null) selectedValue = selectedModel.Id;
+                    
                 }
+
             }
+
 
 
             Properties.DataSource = pLinqServerModeSource;
@@ -222,7 +229,7 @@ namespace KZComponent.Component
                 }
             }
 
-            EditValue = selectedValue;
+            EditValue = selectedModel;
             
         }
 
@@ -324,7 +331,7 @@ namespace KZComponent.Component
                
 
                 this.Properties.DisplayMember = "Name";
-                this.Properties.ValueMember = "Id";
+                //this.Properties.ValueMember = "Id";
 
                 GridColumn col1 = this.Properties.View.Columns.AddField("Name");
                 col1.VisibleIndex = 0;
@@ -344,7 +351,7 @@ namespace KZComponent.Component
             
 
             this.Properties.DisplayMember = "Name";
-            this.Properties.ValueMember = "Id";
+            //this.Properties.ValueMember = "Id";
 
             GridColumn col1 = this.Properties.View.Columns.AddField("Name");
             col1.VisibleIndex = 0;
@@ -360,8 +367,10 @@ namespace KZComponent.Component
 
         void gridLookUpEdit_EditValueChanged(object sender, EventArgs e)
         {
-            this.Tag = SelectedModel;
-            OnSelectionChangeAction?.Invoke(SelectedModel);
+            if (SelectedModel != null)
+            {
+                OnSelectionChangeAction?.Invoke(SelectedModel);
+            }
         }
 
         public void ClearSelectedGridLookUp()

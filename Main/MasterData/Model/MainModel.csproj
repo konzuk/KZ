@@ -30,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Mvvm.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Framework">
       <HintPath>..\..\..\Lib\Framework\Framework.dll</HintPath>
     </Reference>
@@ -60,6 +62,8 @@
     <Compile Include="Contact\ContactMemberTypeModel.cs" />
     <Compile Include="Contact\ContactModel.cs" />
     <Compile Include="Contact\ContactTypeModel.cs" />
+    <Compile Include="Contact\CitizenshipModel.cs" />
+    <Compile Include="Contact\NationalityModel.cs" />
     <Compile Include="Contact\GenderModel.cs" />
     <Compile Include="Employee\DepartmentModel.cs" />
     <Compile Include="Employee\EmployeeModel.cs" />

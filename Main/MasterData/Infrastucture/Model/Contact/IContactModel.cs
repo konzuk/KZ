@@ -14,6 +14,8 @@ namespace MainInfrastructure.Model.Contact
         string ContactMemberTypeName { get; }
         int GenderId { get; }
         IGenderModel GenderModel { get; set; }
+        INationalityModel NationalityModel { get; set; }
+        ICitizenshipModel CitizenshipModel { get; set; }
         string GenderName { get; }
         string ContactAddress { get; set; }
         string ContactAddressInLatin { get; set; }
@@ -25,5 +27,10 @@ namespace MainInfrastructure.Model.Contact
         string Name { get; set; }
         string NameInLatin { get; set; }
         string Code { get; set; }
+
+        string Village { get; set; }
+        string Commune { get; set; }
+        string District { get; set; }
+        string Province { get; set; }
     }
 }

@@ -53,7 +53,7 @@ namespace MainModel.Contact
             set
             {
                 _note = value;
-                RaisePropertyChanged(nameof(Note));
+                RaisePropertyChanged();
             }
         }
 
@@ -68,7 +68,7 @@ namespace MainModel.Contact
             set
             {
                 _contactMemberTypeModel = value;
-                RaisePropertyChanged(nameof(ContactMemberTypeModel));
+                RaisePropertyChanged();
             }
         }
 
@@ -86,6 +86,9 @@ namespace MainModel.Contact
             }
         }
 
+        public INationalityModel NationalityModel { get; set; }
+        public ICitizenshipModel CitizenshipModel { get; set; }
+
         public string GenderName => GenderModel == null ? "" : GenderModel.Name;
 
         public string ContactAddress
@@ -94,10 +97,11 @@ namespace MainModel.Contact
             set
             {
                 _contactAddress = value;
-                RaisePropertyChanged(nameof(ContactAddress));
+                RaisePropertyChanged();
             }
         }
 
+       
         public string ContactAddressInLatin
         {
             get { return _contactAddressInLatin; }
@@ -125,6 +129,22 @@ namespace MainModel.Contact
             {
                 _placeOfBirth = value;
                 RaisePropertyChanged(nameof(PlaceOfBirth));
+            }
+        }
+
+        private string _village;
+        public string Commune { get; set; }
+        public string District { get; set; }
+        public string Province { get; set; }
+
+        public string Village
+        {
+            get { return _village; }
+            set
+            {
+                _village = value;
+                RaisePropertyChanged();
+               
             }
         }
     }

@@ -1,5 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Globalization;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using DevExpress.Mvvm;
+using DevExpress.Mvvm.POCO;
+using Framework.Annotations;
 using Framework.Interfaces.Helper;
 using Framework.Interfaces.Model;
 using Microsoft.Practices.Prism.ViewModel;
@@ -7,7 +13,7 @@ using Microsoft.Practices.Unity;
 
 namespace Framework.Base.Model
 {
-    public class ModelBaseDecorator : NotificationObject, IModelBase
+    public class ModelBaseDecorator : ViewModelBase, IModelBase
     {
         private DateTime _fromLocalDateTime;
         private bool _isAllDate;
@@ -21,15 +27,16 @@ namespace Framework.Base.Model
         public ModelBaseDecorator(IUnityContainer container)
         {
             KZHelper = container.Resolve<IKZHelper>();
+            
         }
-
+        
         public DateTime LocalExecuteDateTime
         {
             get { return _localExecuteDateTime; }
             set
             {
                 _localExecuteDateTime = value;
-                RaisePropertyChanged(nameof(LocalExecuteDateTime));
+                RaisePropertyChanged();
             }
         }
 
@@ -39,7 +46,7 @@ namespace Framework.Base.Model
             set
             {
                 _localExecuteDateTime = value.ToLocalTime();
-                RaisePropertyChanged(nameof(UtcExecuteDateTime));
+                RaisePropertyChanged();
             }
         }
 
@@ -50,7 +57,7 @@ namespace Framework.Base.Model
             set
             {
                 _localDateTime = value.ToLocalTime();
-                RaisePropertyChanged(nameof(UtcDateTime));
+                RaisePropertyChanged();
             }
         }
 
@@ -60,7 +67,7 @@ namespace Framework.Base.Model
             set
             {
                 _localDateTime = value;
-                RaisePropertyChanged(nameof(LocalDateTime));
+                RaisePropertyChanged();
             }
         }
 
@@ -80,7 +87,7 @@ namespace Framework.Base.Model
             set
             {
                 _fromLocalDateTime = value;
-                RaisePropertyChanged(nameof(FromLocalDateTime));
+                RaisePropertyChanged();
             }
         }
 
@@ -90,7 +97,7 @@ namespace Framework.Base.Model
             set
             {
                 _toLocalDateTime = value;
-                RaisePropertyChanged(nameof(ToLocalDateTime));
+                RaisePropertyChanged();
             }
         }
 
@@ -100,7 +107,7 @@ namespace Framework.Base.Model
             set
             {
                 _isAllDate = value;
-                RaisePropertyChanged(nameof(IsAllDate));
+                RaisePropertyChanged();
             }
         }
 
@@ -127,11 +134,41 @@ namespace Framework.Base.Model
         public IModelBase Clone()
         {
             return MemberwiseClone() as IModelBase;
+            
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        private string _name;
         public string NameInLatin { get; set; }
         public string Code { get; set; }
+
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value; 
+                RaisePropertyChanged();
+            }
+        }
+        
+        public void RaiseAllPropertyChanged()
+        {
+            //base.RaisePropertyChanged();
+
+            var pro = this.GetType().GetProperties();
+            foreach (var propertyInfo in pro)
+            {
+                base.RaisePropertyChanged(propertyInfo.Name);
+            }
+
+        }
+        public new void RaisePropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            base.RaisePropertyChanged(propertyName);
+        }
+        
+
+       
     }
 }

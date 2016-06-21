@@ -49,6 +49,8 @@
     <Compile Include="Model\Contact\IContactMemberTypeModel.cs" />
     <Compile Include="Model\Contact\IContactModel.cs" />
     <Compile Include="Model\Contact\IContactTypeModel.cs" />
+    <Compile Include="Model\Contact\INationalityModel.cs" />
+    <Compile Include="Model\Contact\ICitizenshipModel.cs" />
     <Compile Include="Model\Contact\IGenderModel.cs" />
     <Compile Include="Model\Employee\IDepartmentModel.cs" />
     <Compile Include="Model\Employee\IEmployeeModel.cs" />

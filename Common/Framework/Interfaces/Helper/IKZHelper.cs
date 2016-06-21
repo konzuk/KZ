@@ -17,7 +17,7 @@ namespace Framework.Interfaces.Helper
         IKZMessage KZMessage { get; }
 
         IGridLookUpTypes GridLookUpTypes { get; }
-
+        IKZHelperMessage KZHelperMessage { get; }
         void InitAppFunctions();
     }
 }
